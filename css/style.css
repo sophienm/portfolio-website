@@ -1,0 +1,133 @@
+/*
+Colours used:
+Primary Colour (White): #FFFFFF;
+Primary Colour (Off Black): #1D1D1B;
+Secondary Colours (Turquoise): #00FFED
+Secondary Colours (Neon Green): #00FF80
+Secondary Colours (Grey): #929292
+*/
+body {
+  background-color: #ffffff;
+  font-family: 'Muli', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #1D1D1B;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Libre Baskerville';
+  line-height: 1.4;
+}
+h3, h4, p, a, ul, ol  {
+  font-family: 'Muli';
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+a {
+  display: inline-block;
+  color: #1D1D1B;
+  text-decoration: none;
+  /* No underlining */
+  border-bottom: 8px solid #00FF80;
+  height: 13px;
+}
+
+a:visited {
+  /* visited link */
+  color: #929292;
+
+}
+
+a:hover,
+a:focus {
+  color: #1D1D1B;
+  text-decoration: none;
+  /* No underlining */
+  border-bottom: 8px solid #00FFED;
+  height: 13px;
+}
+
+a:active,
+a:focus {
+  /* selected link */
+  font-weight: 700;
+}
+
+.navigation,
+.logo,
+.logo:hover {
+  color: #1D1D1B;
+    border-bottom: none;
+}
+
+.button-social,
+.button-social:hover {
+  border-bottom: none;
+}
+
+.button {
+  font-weight: 700;
+  padding: 10px;
+  border: 3px solid #1D1D1B;
+  height: 21px;
+  transition: 0.2s opacity
+}
+
+.button:visited {
+  /* visited link */
+  color: #1D1D1B;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #1D1D1B;
+  height: 21px;
+  color: #FFFFFF !important;
+  border: 3px solid #1D1D1B;
+}
+
+.button:active,
+.button:focus {
+  background-color: #1D1D1B;
+  color: #00FFED !important;
+}
+
+.button.contact {
+  background-color: #00FFED;
+  text-transform: uppercase;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #1D1D1B;
+  color: #FFFFFF;
+}
