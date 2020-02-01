@@ -168,7 +168,10 @@ nav>ul>li {
   display: inline-block;
   padding: 0 15px;
   font-weight: 300
+nav>ul>li>a {
   text-transform: uppercase;
+  font-weight: 300;
+  color: #1D1D1B;
 }
 
 .button.contact:hover,
