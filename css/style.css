@@ -2,10 +2,21 @@
 Colours used:
 Primary Colour (White): #FFFFFF;
 Primary Colour (Off Black): #1D1D1B;
-Secondary Colours (Turquoise): #00FFED
-Secondary Colours (Neon Green): #00FF80
-Secondary Colours (Grey): #929292
+Secondary Colour (Turquoise): #00FFED
+Secondary Colour (Neon Green): #00FF80
+Secondary Colour (Grey): #929292
+Secondary Colour (Light Grey): #EEEEEE
+Inktank Background Colour (Rose): #FAF3EB
+Inktank Font Colour (Dark Rose): #E4D0C7
+Inktank Font Colour (Light Rose): #F3EAE1
 */
+
+
+* {
+  box-sizing: border-box;
+}
+/* setting the default width of an element to include the padding and the border */
+
 body {
   background-color: #ffffff;
   font-family: 'Muli', sans-serif;
@@ -23,11 +34,12 @@ img {
   width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Libre Baskerville';
   line-height: 1.4;
 }
-h3, h4, p, a, ul, ol  {
+
+h3, h4, p, a, ul, ol {
   font-family: 'Muli';
   line-height: 1.4;
 }
@@ -61,13 +73,12 @@ a {
   text-decoration: none;
   /* No underlining */
   border-bottom: 8px solid #00FF80;
-  height: 13px;
+  height: 21px;
 }
 
 a:visited {
   /* visited link */
   color: #929292;
-
 }
 
 a:hover,
@@ -76,7 +87,7 @@ a:focus {
   text-decoration: none;
   /* No underlining */
   border-bottom: 8px solid #00FFED;
-  height: 13px;
+  height: 21px;
 }
 
 a:active,
@@ -89,6 +100,10 @@ a:focus {
 .logo,
 .logo:hover {
   border-bottom: none;
+  /* no border like a */
+}
+
+.navigation:hover {
   color: #1D1D1B;
   border-bottom: 8px solid #00FF80;
   height: 21px;
@@ -101,13 +116,14 @@ a:focus {
 .button_social,
 .button_social:hover {
   border-bottom: none;
+  /* no underlining like other a */
 }
 
 .button {
+  display: inline;
   font-weight: 700;
   padding: 10px;
   border: 3px solid #1D1D1B;
-  height: 21px;
   transition: 0.2s opacity
 }
 
@@ -119,9 +135,8 @@ a:focus {
 .button:hover,
 .button:focus {
   background-color: #1D1D1B;
-  height: 21px;
-  color: #FFFFFF !important;
   border: 3px solid #1D1D1B;
+  color: #FFFFFF !important;
 }
 
 .button:active,
@@ -130,8 +145,6 @@ a:focus {
   color: #00FFED !important;
 }
 
-.button.contact {
-  background-color: #00FFED;
 header {
   text-align: center;
   background-color: #FFFFFF;
@@ -139,69 +152,102 @@ header {
   box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.15);
   position: fixed; /* header stays in position when scrolling */
   width: 100%
+}
+
+/* Layout styling */
+
 .container {
   padding: 0 15px;
+  /* overall padding for the website */
+}
+
 .row {
   margin: 25px 0;
+}
+
 #work .row {
   padding-bottom: 25px;
+}
+
 #hero h1 {
   text-align: center;
+}
+
 #hero p {
   text-align: center;
+}
+
 #hero {
   background-color: #FAFAFA;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
 .logo {
   max-width: 250px;
+}
+
 .inktank_logo {
   max-width: 150px;
+}
+
 .resolute_logo {
   max-width: 150px;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
 }
+
 nav>ul>li {
   display: inline-block;
   padding: 0 15px;
   font-weight: 300
+}
+
 nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 300;
   color: #1D1D1B;
 }
 
-.button.contact:hover,
-.button.contact:focus {
-  background-color: #1D1D1B;
-  color: #FFFFFF;
 nav {
   width: 100%;
 }
+
 main {
   padding-top: 147px;
 }
+
 footer {
   background-color: #FAFAFA;
   text-align: center;
   padding-bottom: 15px /* space needed due to fixed header */
 }
+
 footer>svg {
   width: 100%
+    /* size of social icons */
+}
+
 #inktank h2, #inktank_colour h2 {
   border-bottom: 20px solid #E4D0C7;
+}
+
 #inktank h3, #inktank_colour h3 {
   color: #E4D0C7 ;
 }
+
+
 #inktank_colour{
 background-color: #FAF3EB;
 padding: 20px 0;
 display: inline-block;
 width: 100%;
 }
+
 .tagline{
   margin-top: 5px
 }
