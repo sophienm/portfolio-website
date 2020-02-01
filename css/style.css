@@ -98,8 +98,8 @@ a:focus {
   border-bottom: 8px solid #00FFED;
 }
 
-.button-social,
-.button-social:hover {
+.button_social,
+.button_social:hover {
   border-bottom: none;
 }
 
