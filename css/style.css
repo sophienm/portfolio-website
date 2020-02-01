@@ -132,6 +132,13 @@ a:focus {
 
 .button.contact {
   background-color: #00FFED;
+header {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 10px 0;
+  box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.15);
+  position: fixed; /* header stays in position when scrolling */
+  width: 100%
   text-transform: uppercase;
 }
 
