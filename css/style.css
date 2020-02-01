@@ -196,3 +196,9 @@ footer>svg {
 #inktank h3, #inktank_colour h3 {
   color: #E4D0C7 ;
 }
+#inktank_colour{
+background-color: #FAF3EB;
+padding: 20px 0;
+display: inline-block;
+width: 100%;
+}
