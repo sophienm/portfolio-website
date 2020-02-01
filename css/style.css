@@ -189,3 +189,5 @@ footer {
   text-align: center;
   padding-bottom: 15px /* space needed due to fixed header */
 }
+footer>svg {
+  width: 100%
