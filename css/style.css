@@ -160,6 +160,10 @@ header {
   max-width: 150px;
 .resolute_logo {
   max-width: 150px;
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
   text-transform: uppercase;
 }
 
