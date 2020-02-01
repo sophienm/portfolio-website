@@ -156,6 +156,8 @@ header {
   width: 100%;
 .logo {
   max-width: 250px;
+.inktank_logo {
+  max-width: 150px;
   text-transform: uppercase;
 }
 
