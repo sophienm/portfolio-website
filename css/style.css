@@ -149,6 +149,11 @@ header {
   text-align: center;
 #hero p {
   text-align: center;
+#hero {
+  background-color: #FAFAFA;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
   text-transform: uppercase;
 }
 
