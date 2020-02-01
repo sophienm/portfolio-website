@@ -141,6 +141,8 @@ header {
   width: 100%
 .container {
   padding: 0 15px;
+.row {
+  margin: 25px 0;
   text-transform: uppercase;
 }
 
