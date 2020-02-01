@@ -154,6 +154,8 @@ header {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+.logo {
+  max-width: 250px;
   text-transform: uppercase;
 }
 
