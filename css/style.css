@@ -88,6 +88,7 @@ a:focus {
 .navigation,
 .logo,
 .logo:hover {
+  border-bottom: none;
   color: #1D1D1B;
     border-bottom: none;
 }
