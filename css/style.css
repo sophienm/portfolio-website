@@ -145,6 +145,8 @@ header {
   margin: 25px 0;
 #work .row {
   padding-bottom: 25px;
+#hero h1 {
+  text-align: center;
   text-transform: uppercase;
 }
 
