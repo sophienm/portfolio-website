@@ -193,3 +193,6 @@ footer>svg {
   width: 100%
 #inktank h2, #inktank_colour h2 {
   border-bottom: 20px solid #E4D0C7;
+#inktank h3, #inktank_colour h3 {
+  color: #E4D0C7 ;
+}
