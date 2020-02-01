@@ -90,7 +90,9 @@ a:focus {
 .logo:hover {
   border-bottom: none;
   color: #1D1D1B;
-    border-bottom: none;
+  border-bottom: 8px solid #00FF80;
+  height: 21px;
+}
 }
 
 .button-social,
