@@ -139,6 +139,8 @@ header {
   box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.15);
   position: fixed; /* header stays in position when scrolling */
   width: 100%
+.container {
+  padding: 0 15px;
   text-transform: uppercase;
 }
 
