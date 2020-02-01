@@ -184,4 +184,8 @@ nav {
 main {
   padding-top: 147px;
 }
+footer {
+  background-color: #FAFAFA;
+  text-align: center;
+  padding-bottom: 15px /* space needed due to fixed header */
 }
