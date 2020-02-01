@@ -178,4 +178,7 @@ nav>ul>li>a {
 .button.contact:focus {
   background-color: #1D1D1B;
   color: #FFFFFF;
+nav {
+  width: 100%;
+}
 }
