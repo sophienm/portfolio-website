@@ -83,6 +83,8 @@ a {
   transition-duration: 0.2s
 }
 
+.center {
+  text-align: center;
 a:visited {
   /* visited link */
   color: #929292;
