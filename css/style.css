@@ -358,3 +358,17 @@ width: 100%;
   width: 80%
   .container {
     padding: 0 30px;
+  header {
+    text-align: unset;
+    padding: 20px 0 10px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 0px;
+  }
+
+  nav>ul {
+    margin-top: 8px;
+  }
