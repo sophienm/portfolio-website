@@ -400,3 +400,6 @@ width: 100%;
   .col-md-5 {
   #inktank h2 {
     font-size: 4.5em;
+  #inktank h3 {
+    font-size: 0.8em;
+  }
