@@ -55,9 +55,9 @@ h1 {
 h2 {
   font-size: 1.55em;
   font-weight: 400;
-  border-bottom: 20px solid #00FF80;
+  border-bottom: 16px solid #00FF80;
   display: inline-block;
-  height: 47px
+  height: 32px;
 }
 
 h3 {
