@@ -345,8 +345,14 @@ width: 100%;
   margin-top: 30px;
   width: 50%
 }
+
 .intro_description_l {
   display: none
 }
 .arrow_left, .arrow_right {
   display: none
+.inktank_mockup2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
