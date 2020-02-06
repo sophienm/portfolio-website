@@ -406,3 +406,7 @@ width: 100%;
   #inktank .inktank_logo {
     max-width: 200px;
   }
+  .intro_title {
+    display: block;
+    margin-top: 0;
+  }
