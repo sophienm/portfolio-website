@@ -524,6 +524,9 @@ width: 100%;
   #hero {
     padding: 50px 80px;
   }
+  #work {
+    display: block;
+    margin: 40px 0;
   .prototype_evolution {
     display: block;
     width: 80%;
