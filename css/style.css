@@ -542,6 +542,10 @@ width: 100%;
   #inktank h2 {
     font-size: 6.5em;
   }
+  #inktank h3 {
+    font-size: 1em;
+    margin-top: 40px;
+  }
   .prototype_evolution {
     display: block;
     width: 80%;
