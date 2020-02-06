@@ -96,13 +96,18 @@ a:focus {
   text-decoration: none;
   /* No underlining */
   border-bottom: 8px solid #00FFED;
-  height: 21px;
+  height: 18px;
 }
 
 a:active,
 a:focus {
   /* selected link */
   font-weight: 700;
+}
+
+.picture_link a, .picture_link a:hover,
+.picture_link a:focus {
+  border-bottom: none;
 }
 
 .navigation,
