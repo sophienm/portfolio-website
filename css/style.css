@@ -418,3 +418,9 @@ width: 100%;
   #inktank_colour_2 {
     display: none;
   }
+  .inktank_mockup1 {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
