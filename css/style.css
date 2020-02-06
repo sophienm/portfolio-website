@@ -424,3 +424,43 @@ width: 100%;
     margin-top: 0;
     margin-right: 0;
   }
+  #inktank_colour_3 .arrow_right {
+    display: unset;
+    display: block;
+    margin-top: 60%;
+    width: 40%
+  }
+  #inktank_colour_3 .arrow_left {
+    display: unset;
+    display: block;
+    margin-top: 100%;
+    margin-left: 60%;
+    width: 40%
+  }
+  #inktank_colour_8 .row {
+    margin: 0
+  }
+  #inktank_colour_8 .arrow_right {
+    display: unset;
+    display: block;
+    margin-top: 60%;
+    margin-right: 50%;
+    width: 40%
+  }
+  #inktank_colour_8 .arrow_left {
+    display: unset;
+    display: block;
+    margin-top: 120%;
+    margin-left: 60%;
+    width: 40%
+  }
+  #inktank_colour_10 .row {
+    margin: 0
+  }
+  #inktank_colour_10 .arrow_right {
+    display: unset;
+    display: block;
+    margin-top: 80%;
+    margin-right: 50%;
+    width: 40%
+  }
