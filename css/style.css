@@ -387,3 +387,7 @@ width: 100%;
   }
   .navigation:focus {
     border-bottom: 12px solid #00FFED;
+  h2 {
+    border-bottom: 20px solid #00FF80;
+    display: inline-block;
+    height: 40px;
