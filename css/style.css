@@ -464,3 +464,33 @@ width: 100%;
     margin-right: 50%;
     width: 40%
   }
+  .affinity_map_1 {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .affinity_map_2 {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .card_sort_1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .sitemap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .inktank_mockup2 {
+    width: 80%;
+  }
+  .prototype_evolution {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
