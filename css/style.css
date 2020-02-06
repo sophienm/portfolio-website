@@ -293,5 +293,12 @@ width: 100%;
 }
 
 .tagline{
+/*ABOUT modifications*/
+.profile_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+}
   margin-top: 5px
 }
