@@ -410,3 +410,8 @@ width: 100%;
     display: block;
     margin-top: 0;
   }
+  .intro_description_l {
+    display: unset;
+    display: block;
+    margin-top: 70px;
+  }
