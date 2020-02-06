@@ -398,6 +398,9 @@ width: 100%;
     font-size: 0.9em
   }
   .col-md-5 {
+  .col-md-6 {
+    width: 50%;
+  }
   #inktank h2 {
     font-size: 4.5em;
   #inktank h3 {
