@@ -124,7 +124,7 @@ a:focus {
 }
 
 .navigation:focus {
-  border-bottom: 8px solid #00FFED;
+  border-bottom: 10px solid #00FFED;
 }
 
 .button_social,
