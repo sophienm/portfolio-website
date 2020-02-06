@@ -502,6 +502,10 @@ width: 100%;
   .logo {
     max-width: 250px;
   }
+  footer {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
   .prototype_evolution {
     display: block;
     width: 80%;
