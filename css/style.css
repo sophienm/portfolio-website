@@ -403,3 +403,6 @@ width: 100%;
   #inktank h3 {
     font-size: 0.8em;
   }
+  #inktank .inktank_logo {
+    max-width: 200px;
+  }
