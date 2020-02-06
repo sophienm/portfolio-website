@@ -521,6 +521,9 @@ width: 100%;
   .col-lg-5 {
     width: 41.67%;
   }
+  #hero {
+    padding: 50px 80px;
+  }
   .prototype_evolution {
     display: block;
     width: 80%;
