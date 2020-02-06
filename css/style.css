@@ -300,5 +300,13 @@ width: 100%;
   margin-right: auto;
   width: 80%
 }
+#inktank h2 {
+  font-family: 'Muli';
+  line-height: 1.4;
+  color: #E4D0C7;
+  font-weight: 800;
+  font-size: 3em;
+  margin-top: 20px;
+  border-bottom: none;
   margin-top: 5px
 }
