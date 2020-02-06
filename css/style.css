@@ -527,6 +527,13 @@ width: 100%;
   #work {
     display: block;
     margin: 40px 0;
+  .inktank_logo {
+    margin-top: 110px;
+    max-width: 150px;
+  .resolute_logo {
+    margin-top: 110px;
+    max-width: 150px;
+  }
   .prototype_evolution {
     display: block;
     width: 80%;
