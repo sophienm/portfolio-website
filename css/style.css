@@ -129,6 +129,7 @@ a:focus {
 
 .button_social,
 .button_social:hover {
+  margin: 5px;
   border-bottom: none;
   /* no underlining like other a */
 }
