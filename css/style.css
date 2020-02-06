@@ -391,3 +391,9 @@ width: 100%;
     border-bottom: 20px solid #00FF80;
     display: inline-block;
     height: 40px;
+  #work p,
+  #contact p,
+  #about p, #about ul,
+  #inktank p, #inktank ul, #inktank ol {
+    font-size: 0.9em
+  }
