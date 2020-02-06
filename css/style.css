@@ -71,6 +71,8 @@ h4 {
   font-weight: 300;
 }
 
+ul, ol {
+  padding-left: 20px
 a {
   display: inline-block;
   color: #1D1D1B;
