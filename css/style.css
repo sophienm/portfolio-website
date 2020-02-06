@@ -314,5 +314,16 @@ width: 100%;
   color: #1D1D1B;
   font-weight: 300;
   font-size: 1.1em;
+#inktank_colour_1,
+#inktank_colour_3,
+#inktank_colour_5,
+#inktank_colour_7,
+#inktank_colour_9,
+#inktank_colour_11 {
+  background-color: #FAF3EB;
+  padding: 30px 0;
+  display: inline-block;
+  width: 100%;
+}
   margin-top: 5px
 }
