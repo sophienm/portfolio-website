@@ -550,7 +550,60 @@ width: 100%;
     margin-top: 50px;
     max-width: 300px;
   }
+  .inktank_mockup1 {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .affinity_map_1 {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .quotes_1,
+  .quotes_2 {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  .user_flow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .card_sort_2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .card_sort_1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .sitemap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .affinity_map_2 {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .inktank_mockup2 {
+    width: 70%;
+  }
   .prototype_evolution {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .style_guide {
     display: block;
     width: 80%;
     margin: auto;
