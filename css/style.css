@@ -325,5 +325,16 @@ width: 100%;
   display: inline-block;
   width: 100%;
 }
+#inktank_colour_2,
+#inktank_colour_4,
+#inktank_colour_6,
+#inktank_colour_8,
+#inktank_colour_10,
+#inktank_colour_12 {
+  background-color: #FFFFFF;
+  padding: 30px 0;
+  display: inline-block;
+  width: 100%;
+}
   margin-top: 5px
 }
