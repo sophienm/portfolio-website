@@ -348,3 +348,5 @@ width: 100%;
 .intro_description_l {
   display: none
 }
+.arrow_left, .arrow_right {
+  display: none
