@@ -372,3 +372,12 @@ width: 100%;
   nav>ul {
     margin-top: 8px;
   }
+  a {
+    border-bottom: 10px solid #00FF80;
+    height: 22px;
+  }
+  a:hover,
+  a:focus {
+    border-bottom: 10px solid #00FFED;
+    height: 22px;
+  }
