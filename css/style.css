@@ -537,6 +537,8 @@ width: 100%;
   .profile_image {
     padding-top: 20px;
     width: 60%
+  #about .center {
+    text-align: unset;
   .prototype_evolution {
     display: block;
     width: 80%;
