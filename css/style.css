@@ -381,3 +381,9 @@ width: 100%;
     border-bottom: 10px solid #00FFED;
     height: 22px;
   }
+  .navigation:hover {
+    border-bottom: 12px solid #00FF80;
+    height: 22px;
+  }
+  .navigation:focus {
+    border-bottom: 12px solid #00FFED;
