@@ -308,5 +308,11 @@ width: 100%;
   font-size: 3em;
   margin-top: 20px;
   border-bottom: none;
+#inktank h3 {
+  font-family: 'Libre Baskerville';
+  line-height: 1.4;
+  color: #1D1D1B;
+  font-weight: 300;
+  font-size: 1.1em;
   margin-top: 5px
 }
