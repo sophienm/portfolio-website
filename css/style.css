@@ -518,6 +518,9 @@ width: 100%;
   .col-lg-6 {
     width: 50%;
   }
+  .col-lg-5 {
+    width: 41.67%;
+  }
   .prototype_evolution {
     display: block;
     width: 80%;
