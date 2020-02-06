@@ -80,6 +80,7 @@ a {
   /* No underlining */
   border-bottom: 8px solid #00FF80;
   height: 18px;
+  transition-duration: 0.2s
 }
 
 a:visited {
