@@ -546,6 +546,10 @@ width: 100%;
     font-size: 1em;
     margin-top: 40px;
   }
+  #inktank .inktank_logo {
+    margin-top: 50px;
+    max-width: 300px;
+  }
   .prototype_evolution {
     display: block;
     width: 80%;
