@@ -560,6 +560,40 @@ width: 100%;
     width: 70%;
     margin: auto;
   }
+  #inktank_colour_3 .arrow_right {
+    display: unset;
+    display: block;
+    margin-top: 30%;
+    width: 40%
+  }
+  #inktank_colour_3 .arrow_left {
+    display: unset;
+    display: block;
+    margin-top: 40%;
+    margin-left: 60%;
+    width: 40%
+  }
+  #inktank_colour_8 .arrow_right {
+    display: unset;
+    display: block;
+    margin-top: 35%;
+    margin-right: 50%;
+    width: 40%
+  }
+  #inktank_colour_8 .arrow_left {
+    display: unset;
+    display: block;
+    margin-top: 60%;
+    margin-left: 60%;
+    width: 40%
+  }
+  #inktank_colour_10 .arrow_right {
+    display: unset;
+    display: block;
+    margin-top: 30%;
+    margin-right: 50%;
+    width: 40%
+  }
   .affinity_map_1 {
     display: block;
     width: 80%;
