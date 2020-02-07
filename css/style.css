@@ -10,13 +10,11 @@ Inktank Background Colour (Rose): #FAF3EB
 Inktank Font Colour (Dark Rose): #E4D0C7
 Inktank Font Colour (Light Rose): #F3EAE1
 */
-
-
 * {
   box-sizing: border-box;
 }
-/* setting the default width of an element to include the padding and the border */
 
+/* setting the default width of an element to include the padding and the border */
 body {
   background-color: #ffffff;
   font-family: 'Muli', sans-serif;
@@ -47,6 +45,7 @@ h3, h4, p, a, ul, ol {
 p, a, ul, ol {
   font-weight: 200;
 }
+
 h1 {
   font-size: 1.95em;
   font-weight: 400;
@@ -73,6 +72,8 @@ h4 {
 
 ul, ol {
   padding-left: 20px
+}
+
 a {
   display: inline-block;
   color: #1D1D1B;
@@ -85,6 +86,8 @@ a {
 
 .center {
   text-align: center;
+}
+
 a:visited {
   /* visited link */
   color: #929292;
@@ -119,8 +122,8 @@ a:focus {
 
 .navigation:hover {
   color: #1D1D1B;
-  border-bottom: 8px solid #00FF80;
-  height: 21px;
+  border-bottom: 10px solid #00FF80;
+  height: 19px;
 }
 
 .navigation:focus {
@@ -131,15 +134,14 @@ a:focus {
 .button_social:hover {
   margin: 5px;
   border-bottom: none;
-  /* no underlining like other a */
 }
 
 .button {
   display: inline;
+  background-color: #FFFFFF;
   font-weight: 700;
   padding: 10px;
   border: 3px solid #1D1D1B;
-  transition: 0.2s opacity
   transition-duration: 0.2s;
 }
 
@@ -148,8 +150,7 @@ a:focus {
   color: #1D1D1B;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   background-color: #1D1D1B;
   border: 3px solid #1D1D1B;
   color: #FFFFFF !important;
@@ -161,19 +162,42 @@ a:focus {
   color: #00FFED !important;
 }
 
+.button_cv {
+  display: inline;
+  font-weight: 700;
   padding: 10px 28px;
+  border: 3px solid #1D1D1B;
   transition-duration: 0.2s
+}
+
+.button_cv:visited {
+  color: #1D1D1B;
+}
+
+.button_cv:hover {
+  background-color: #1D1D1B;
+  border: 3px solid #1D1D1B;
+  color: #FFFFFF !important;
+}
+
+.button_cv:active,
+.button_cv:focus {
+  background-color: #1D1D1B;
+  color: #00FFED !important;
+  border-bottom: none
+}
+
 header {
   text-align: center;
   background-color: #FFFFFF;
-  padding: 10px 0;
+  padding: 15px 0 0 0;
   box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.15);
-  position: fixed; /* header stays in position when scrolling */
+  position: fixed;
+  /* header stays in position when scrolling */
   width: 100%
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
   /* overall padding for the website */
@@ -183,34 +207,7 @@ header {
   margin: 25px 0;
 }
 
-#work .row {
-  padding-bottom: 25px;
-}
-
-#hero h1 {
-  text-align: center;
-}
-
-#hero p {
-  text-align: center;
-}
-
-#hero {
-  background-color: #FAFAFA;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
 .logo {
-  max-width: 250px;
-}
-
-.inktank_logo {
-  max-width: 150px;
-}
-
-.resolute_logo {
   max-width: 150px;
 }
 
@@ -236,13 +233,13 @@ nav {
 }
 
 main {
-  padding-top: 147px;
+  padding-top: 108px;
 }
 
 footer {
   background-color: #FAFAFA;
   text-align: center;
-  padding-bottom: 15px /* space needed due to fixed header */
+
 }
 
 footer>svg {
@@ -250,19 +247,34 @@ footer>svg {
     /* size of social icons */
 }
 
-#inktank h2, #inktank_colour h2 {
-  border-bottom: 20px solid #E4D0C7;
+/*INDEX modifications*/
+#work .row {
+  margin-bottom: 50px;
 }
 
-#inktank h3, #inktank_colour h3 {
-  color: #E4D0C7 ;
+#work {
+  margin-top: 20px
+}
+
+#hero {
+  text-align: center;
+  background-color: #FAFAFA;
+  padding: 25px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.inktank_logo {
+  margin-top: 25px;
+  max-width: 100px;
+}
+
+.resolute_logo {
+  margin-top: 25px;
+  max-width: 100px;
 }
 
 
-#inktank_colour{
-background-color: #FAF3EB;
-padding: 20px 0;
-width: 100%;
 /*ANIMATION*/
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -292,7 +304,6 @@ width: 100%;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.tagline{
 /*ABOUT modifications*/
 .profile_image {
   display: block;
@@ -300,6 +311,8 @@ width: 100%;
   margin-right: auto;
   width: 80%
 }
+
+/*INKTANK modifications*/
 #inktank h2 {
   font-family: 'Muli';
   line-height: 1.4;
@@ -308,12 +321,16 @@ width: 100%;
   font-size: 3em;
   margin-top: 20px;
   border-bottom: none;
+}
+
 #inktank h3 {
   font-family: 'Libre Baskerville';
   line-height: 1.4;
   color: #1D1D1B;
   font-weight: 300;
   font-size: 1.1em;
+}
+
 #inktank_colour_1,
 #inktank_colour_3,
 #inktank_colour_5,
@@ -325,6 +342,7 @@ width: 100%;
   display: inline-block;
   width: 100%;
 }
+
 #inktank_colour_2,
 #inktank_colour_4,
 #inktank_colour_6,
@@ -336,8 +354,11 @@ width: 100%;
   display: inline-block;
   width: 100%;
 }
+
+.tagline {
   margin-top: 5px
 }
+
 .inktank_mockup1 {
   display: block;
   margin-left: auto;
@@ -349,15 +370,33 @@ width: 100%;
 .intro_description_l {
   display: none
 }
+
 .arrow_left, .arrow_right {
   display: none
+}
+
 .inktank_mockup2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%
+}
+
+.demo, .invision, {
+
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  /*GENERAL modifications*/
   .container {
     padding: 0 30px;
+    /* overall padding for the website */
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 10px;
@@ -372,70 +411,130 @@ width: 100%;
   nav>ul {
     margin-top: 8px;
   }
+
   a {
     border-bottom: 10px solid #00FF80;
     height: 22px;
   }
+
   a:hover,
   a:focus {
     border-bottom: 10px solid #00FFED;
     height: 22px;
   }
+
   .navigation:hover {
     border-bottom: 12px solid #00FF80;
     height: 22px;
   }
+
   .navigation:focus {
     border-bottom: 12px solid #00FFED;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  body {
+    font-size: 18px
+  }
+
   h2 {
     border-bottom: 20px solid #00FF80;
     display: inline-block;
     height: 40px;
+  }
+
   #work p,
   #contact p,
   #about p, #about ul,
   #inktank p, #inktank ul, #inktank ol {
     font-size: 0.9em
   }
+
   .col-md-5 {
+    width: 41.67%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-7 {
     width: 58.33%;
   }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px 0 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /*INDEX modifications*/
+  #hero span {
+    display: block;
+  }
+
+  /*INKTANK modifications*/
   #inktank h2 {
     font-size: 4.5em;
+  }
+
   #inktank h3 {
     font-size: 0.8em;
   }
+
   #inktank .inktank_logo {
     max-width: 200px;
   }
+
   .intro_title {
     display: block;
     margin-top: 0;
   }
+
   .intro_description_l {
     display: unset;
     display: block;
     margin-top: 70px;
   }
+
+  .intro_description_l h3 {
+    padding: 0;
+  }
+
+  .intro_description_l>.row {
+    margin-top: 0
+  }
+
   #inktank_colour_2 {
     display: none;
   }
+
   .inktank_mockup1 {
     display: block;
     width: 100%;
     margin-top: 0;
     margin-right: 0;
   }
+
+  #inktank_colour_3 .row {
+    margin: 0
+  }
+
   #inktank_colour_3 .arrow_right {
     display: unset;
     display: block;
     margin-top: 60%;
     width: 40%
   }
+
   #inktank_colour_3 .arrow_left {
     display: unset;
     display: block;
@@ -443,9 +542,11 @@ width: 100%;
     margin-left: 60%;
     width: 40%
   }
+
   #inktank_colour_8 .row {
     margin: 0
   }
+
   #inktank_colour_8 .arrow_right {
     display: unset;
     display: block;
@@ -453,6 +554,7 @@ width: 100%;
     margin-right: 50%;
     width: 40%
   }
+
   #inktank_colour_8 .arrow_left {
     display: unset;
     display: block;
@@ -460,9 +562,11 @@ width: 100%;
     margin-left: 60%;
     width: 40%
   }
+
   #inktank_colour_10 .row {
     margin: 0
   }
+
   #inktank_colour_10 .arrow_right {
     display: unset;
     display: block;
@@ -470,102 +574,153 @@ width: 100%;
     margin-right: 50%;
     width: 40%
   }
+
   .affinity_map_1 {
     display: block;
     width: 80%;
     margin: 10px auto;
   }
+
   .affinity_map_2 {
     display: block;
     width: 80%;
     margin: 10px auto;
   }
+
   .card_sort_1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
+
   .sitemap {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
+
   .inktank_mockup2 {
     width: 80%;
   }
+
   .prototype_evolution {
     display: block;
     width: 80%;
     margin: auto;
   }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  /*GENERAL modifications*/
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  header {
+    padding: 20px 0 10px;
+  }
+
+  nav>ul {
+    margin-top: 20px;
+  }
+
   .logo {
     max-width: 250px;
   }
+
+  main {
+    padding-top: 103px;
+  }
+
   footer {
     padding-top: 30px;
     padding-bottom: 40px;
   }
+
   .col-lg-7 {
     width: 58.33%;
   }
+
   .col-lg-6 {
     width: 50%;
   }
+
   .col-lg-5 {
     width: 41.67%;
   }
+
+  /*INDEX modifications*/
   #hero {
     padding: 50px 80px;
   }
+
   #work {
     display: block;
     margin: 40px 0;
+  }
+
   .inktank_logo {
     margin-top: 110px;
     max-width: 150px;
+  }
+
   .resolute_logo {
     margin-top: 110px;
     max-width: 150px;
   }
+
+  /*ABOUT modifications*/
   .profile_image {
     padding-top: 20px;
     width: 60%
+  }
+
   #about .center {
     text-align: unset;
+  }
+
+  /*INKTANK modifications*/
   #inktank h2 {
     font-size: 6.5em;
   }
+
   #inktank h3 {
     font-size: 1em;
     margin-top: 40px;
   }
+
   #inktank .inktank_logo {
     margin-top: 50px;
     max-width: 300px;
   }
+
   .intro_description_l {
     display: unset;
     display: block;
     margin-top: 90px
   }
+
   .inktank_mockup1 {
     display: block;
     width: 70%;
     margin: auto;
   }
+
   #inktank_colour_3 .arrow_right {
     display: unset;
     display: block;
     margin-top: 30%;
     width: 40%
   }
+
   #inktank_colour_3 .arrow_left {
     display: unset;
     display: block;
@@ -573,6 +728,7 @@ width: 100%;
     margin-left: 60%;
     width: 40%
   }
+
   #inktank_colour_8 .arrow_right {
     display: unset;
     display: block;
@@ -580,6 +736,7 @@ width: 100%;
     margin-right: 50%;
     width: 40%
   }
+
   #inktank_colour_8 .arrow_left {
     display: unset;
     display: block;
@@ -587,6 +744,7 @@ width: 100%;
     margin-left: 60%;
     width: 40%
   }
+
   #inktank_colour_10 .arrow_right {
     display: unset;
     display: block;
@@ -594,56 +752,77 @@ width: 100%;
     margin-right: 50%;
     width: 40%
   }
+
   .affinity_map_1 {
     display: block;
     width: 80%;
     margin: 10px auto;
   }
+
   .quotes_1,
   .quotes_2 {
     display: block;
     margin: auto;
     width: 80%;
   }
+
   .user_flow {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
+
   .card_sort_2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
+
   .card_sort_1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
   }
+
   .sitemap {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
+
   .affinity_map_2 {
     display: block;
     width: 80%;
     margin: 10px auto;
   }
+
   .inktank_mockup2 {
     width: 70%;
   }
+
   .prototype_evolution {
     display: block;
     width: 80%;
     margin: auto;
   }
+
   .style_guide {
     display: block;
     width: 80%;
     margin: auto;
   }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {}
