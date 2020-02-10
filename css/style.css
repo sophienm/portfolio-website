@@ -115,6 +115,11 @@ a:focus {
   /* no border like a */
 }
 
+.navigation {
+  color: #929292 !important;
+  border-bottom: none;
+}
+
 .navigation:hover {
   color: #1D1D1B;
   border-bottom: 10px solid #00FF80;
