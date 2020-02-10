@@ -211,6 +211,41 @@ header {
   max-width: 150px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+  /* hides navigation except hamburger*/
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  /* shows complete menu when hamburger has been clicked */
+}
+
+.navtoggle.responsive nav {
+  text-align: center;
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
