@@ -74,6 +74,10 @@ ul, ol {
   padding-left: 20px
 }
 
+.center {
+  text-align: center;
+}
+
 a {
   display: inline-block;
   color: #1D1D1B;
@@ -82,10 +86,6 @@ a {
   border-bottom: 8px solid #00FF80;
   height: 18px;
   transition-duration: 0.2s
-}
-
-.center {
-  text-align: center;
 }
 
 a:visited {
@@ -123,16 +123,16 @@ a:focus {
 .navigation:hover {
   color: #1D1D1B;
   border-bottom: 10px solid #00FF80;
-  height: 19px;
+  height: 23px;
 }
 
 .navigation:focus {
   border-bottom: 10px solid #00FFED;
 }
 
-.button_social,
-.button_social:hover {
-  margin: 5px;
+.icon:focus,
+.icon:hover,
+.icon {
   border-bottom: none;
 }
 
@@ -188,9 +188,8 @@ a:focus {
 }
 
 header {
-  text-align: center;
   background-color: #FFFFFF;
-  padding: 15px 0 0 0;
+  padding: 10px 0 4px 0;
   box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.15);
   position: fixed;
   /* header stays in position when scrolling */
@@ -249,32 +248,21 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
-  padding: 0 15px;
-  font-weight: 300
+  margin: 0;
 }
 
 nav>ul>li>a {
   text-transform: uppercase;
-  font-weight: 300;
   color: #1D1D1B;
 }
 
-nav {
-  width: 100%;
-}
-
 main {
-  padding-top: 108px;
+  padding-top: 59.5px;
 }
 
 footer {
   background-color: #FAFAFA;
   text-align: center;
-
 }
 
 footer>svg {
@@ -307,36 +295,6 @@ footer>svg {
 .resolute_logo {
   margin-top: 25px;
   max-width: 100px;
-}
-
-
-/*ANIMATION*/
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /*ABOUT modifications*/
@@ -417,8 +375,52 @@ footer>svg {
   width: 80%
 }
 
-.demo, .invision, {
 
+/*ANIMATION*/
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
@@ -434,7 +436,9 @@ Medium devices (640px and larger)
 
   header {
     text-align: unset;
-    padding: 20px 0 10px;
+    padding: 22px 0 12px 0;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
     /* makes navigation visible again*/
@@ -448,11 +452,12 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 0px;
+    padding-top: 8px
   }
 
-  nav>ul {
-    margin-top: 8px;
+  nav>ul>li {
+    display: inline-block;
+    padding: 0 0 0 25px;
   }
 
   a {
@@ -464,15 +469,6 @@ Medium devices (640px and larger)
   a:focus {
     border-bottom: 10px solid #00FFED;
     height: 22px;
-  }
-
-  .navigation:hover {
-    border-bottom: 12px solid #00FF80;
-    height: 22px;
-  }
-
-  .navigation:focus {
-    border-bottom: 12px solid #00FFED;
   }
 
   main {
@@ -667,20 +663,16 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  header {
-    padding: 20px 0 10px;
-  }
-
-  nav>ul {
-    margin-top: 20px;
-  }
-
   .logo {
-    max-width: 250px;
+    max-width: 200px;
+  }
+
+  nav {
+    padding-top: 16px
   }
 
   main {
-    padding-top: 103px;
+    padding-top: 82.5px;
   }
 
   footer {
