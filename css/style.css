@@ -108,7 +108,6 @@ a:focus {
   border-bottom: none;
 }
 
-.navigation,
 .logo,
 .logo:hover {
   border-bottom: none;
@@ -130,6 +129,7 @@ a:focus {
   font-weight: 200;
   border-bottom: 10px solid #00FFED;
 }
+
 
 .icon:focus,
 .icon:hover,
@@ -227,7 +227,7 @@ header {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   /* shows complete menu when hamburger has been clicked */
 }
@@ -236,13 +236,13 @@ header {
   text-align: center;
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -375,7 +375,6 @@ footer>svg {
   margin-right: auto;
   width: 80%
 }
-
 
 /*ANIMATION*/
 @keyframes color-change {
