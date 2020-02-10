@@ -121,7 +121,7 @@ a:focus {
 }
 
 .navigation:hover {
-  color: #1D1D1B;
+  color: #1D1D1B !important;
   border-bottom: 10px solid #00FF80;
   height: 23px;
 }
