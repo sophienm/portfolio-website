@@ -88,11 +88,6 @@ a {
   transition-duration: 0.2s
 }
 
-a:visited {
-  /* visited link */
-  color: #929292;
-}
-
 a:hover,
 a:focus {
   color: #1D1D1B;
