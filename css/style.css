@@ -9,7 +9,10 @@ Secondary Colour (Light Grey): #EEEEEE
 Inktank Background Colour (Rose): #FAF3EB
 Inktank Font Colour (Dark Rose): #E4D0C7
 Inktank Font Colour (Light Rose): #F3EAE1
+Resoliute. Font Colour (Light Grey): #F5F5F5
+Resoliute. Font Colour (Turquoise): #02CBCB
 */
+
 * {
   box-sizing: border-box;
 }
@@ -88,8 +91,7 @@ a {
   transition-duration: 0.2s
 }
 
-a:hover,
-a:focus {
+a:hover {
   color: #1D1D1B;
   text-decoration: none;
   /* No underlining */
@@ -121,7 +123,7 @@ a:focus {
 
 .navigation:hover {
   color: #1D1D1B !important;
-  border-bottom: 10px solid #00FF80;
+  border-bottom: 10px solid #00FFED;
   height: 23px;
 }
 
@@ -130,14 +132,14 @@ a:focus {
   border-bottom: 10px solid #00FFED;
 }
 
-
 .icon:focus,
 .icon:hover,
 .icon {
   border-bottom: none;
 }
 
-.button {
+.button,
+.button_cv {
   display: inline;
   background-color: #FFFFFF;
   font-weight: 700;
@@ -146,46 +148,27 @@ a:focus {
   transition-duration: 0.2s;
 }
 
-.button:visited {
-  /* visited link */
-  color: #1D1D1B;
-}
-
-.button:hover {
-  background-color: #1D1D1B;
-  border: 3px solid #1D1D1B;
-  color: #FFFFFF !important;
-}
-
-.button:active,
-.button:focus {
-  background-color: #1D1D1B;
-  color: #00FFED !important;
-}
-
-.button_cv {
-  display: inline;
-  font-weight: 700;
-  padding: 10px 28px;
-  border: 3px solid #1D1D1B;
-  transition-duration: 0.2s
-}
-
+.button:visited,
 .button_cv:visited {
+  /* visited link */
+  background-color: #FFFFFF;
   color: #1D1D1B;
 }
 
+.button:hover,
 .button_cv:hover {
   background-color: #1D1D1B;
   border: 3px solid #1D1D1B;
   color: #FFFFFF !important;
 }
 
+.button:active,
+.button:focus,
 .button_cv:active,
 .button_cv:focus {
-  background-color: #1D1D1B;
-  color: #00FFED !important;
-  border-bottom: none
+  background-color: #FFFFFF;
+  color: #1D1D1B !important;
+  border-bottom: 3px solid #1D1D1B
 }
 
 header {
@@ -234,7 +217,6 @@ header {
 
 .navtoggle.responsive nav {
   text-align: center;
-  padding: 24px 0 0;
 }
 
 .navtoggle.responsive li {
@@ -266,12 +248,13 @@ footer {
   text-align: center;
 }
 
-footer>svg {
-  width: 100%
+.icon {
+  width: 48px;
+  margin: 10px
     /* size of social icons */
 }
 
-/*INDEX modifications*/
+/* /////////////// INDEX modifications /////////////// */
 #work .row {
   margin-bottom: 50px;
 }
@@ -298,7 +281,7 @@ footer>svg {
   max-width: 100px;
 }
 
-/*ABOUT modifications*/
+/* /////////////// ABOUT modifications /////////////// */
 .profile_image {
   display: block;
   margin-left: auto;
@@ -306,7 +289,11 @@ footer>svg {
   width: 80%
 }
 
-/*INKTANK modifications*/
+#skills .row {
+  margin-top: 0
+}
+
+/* /////////////// INKTANK modifications /////////////// */
 #inktank h2 {
   font-family: 'Muli';
   line-height: 1.4;
@@ -325,15 +312,23 @@ footer>svg {
   font-size: 1.1em;
 }
 
+#inktank_colour_1 .row {
+  margin-top: 0
+}
+
+#inktank_colour_12 {
+  display: none
+}
+
 #inktank_colour_1,
 #inktank_colour_3,
 #inktank_colour_5,
 #inktank_colour_7,
 #inktank_colour_9,
-#inktank_colour_11 {
+#inktank_colour_11,
+#inktank_colour_13 {
   background-color: #FAF3EB;
   padding: 30px 0;
-  display: inline-block;
   width: 100%;
 }
 
@@ -345,8 +340,11 @@ footer>svg {
 #inktank_colour_12 {
   background-color: #FFFFFF;
   padding: 30px 0;
-  display: inline-block;
   width: 100%;
+}
+
+.intro_title {
+  text-align: center;
 }
 
 .tagline {
@@ -365,7 +363,7 @@ footer>svg {
   display: none
 }
 
-.arrow_left, .arrow_right {
+.inktank_arrow_left, .inktank_arrow_right {
   display: none
 }
 
@@ -376,7 +374,83 @@ footer>svg {
   width: 80%
 }
 
-/*ANIMATION*/
+/* /////////////// RESOLUTE modifications /////////////// */
+
+#resolute h2 {
+  font-family: 'Muli';
+  line-height: 1.4;
+  color: #E4D0C7;
+  font-weight: 800;
+  font-size: 3em;
+  margin-top: 20px;
+  border-bottom: none;
+}
+
+#resolute h3 {
+  font-family: 'Libre Baskerville';
+  line-height: 1.4;
+  color: #1D1D1B;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+#resolute_colour_3 .row {
+  margin-top: 0
+}
+
+#inktank_colour_12 {
+  display: none
+}
+
+#inktank_colour_1,
+#inktank_colour_3,
+#inktank_colour_5,
+#inktank_colour_7,
+#inktank_colour_9,
+#inktank_colour_11,
+#inktank_colour_13 {
+  background-color: #FAF3EB;
+  padding: 30px 0;
+  width: 100%;
+}
+
+#inktank_colour_2,
+#inktank_colour_4,
+#inktank_colour_6,
+#inktank_colour_8,
+#inktank_colour_10,
+#inktank_colour_12 {
+  background-color: #FFFFFF;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.resolute_arrow_left, .resolute_arrow_right {
+  display: none
+}
+
+
+/* /////////ANIMATION////////// */
+@keyframes color-rec {
+  0% {
+    fill: #00FF80;
+  }
+
+  100% {
+    fill: #00FFED;
+  }
+}
+
+rect{
+  animation: 4s color-rec infinite alternate linear
+}
+
+
+
+.berlin-illustration {
+  display: none
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -389,6 +463,8 @@ footer>svg {
   100% {
     fill: #f76414;
   }
+
+
 }
 
 .sun {
@@ -428,7 +504,7 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
-  /*GENERAL modifications*/
+  /* /////////////// GENERAL modifications /////////////// */
   .container {
     padding: 0 30px;
     /* overall padding for the website */
@@ -441,6 +517,7 @@ Medium devices (640px and larger)
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
+    padding: 0 0 0 25px;
     /* makes navigation visible again*/
   }
 
@@ -453,11 +530,6 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     padding-top: 8px
-  }
-
-  nav>ul>li {
-    display: inline-block;
-    padding: 0 0 0 25px;
   }
 
   a {
@@ -515,12 +587,12 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  /*INDEX modifications*/
+  /* /////////////// INDEX modifications /////////////// */
   #hero span {
     display: block;
   }
 
-  /*INKTANK modifications*/
+  /* /////////////// INKTANK modifications /////////////// */
   #inktank h2 {
     font-size: 4.5em;
   }
@@ -533,7 +605,12 @@ Medium devices (640px and larger)
     max-width: 200px;
   }
 
+  #inktank_colour_1 .row {
+    margin-top: 30px
+  }
+
   .intro_title {
+    text-align: unset;
     display: block;
     margin-top: 0;
   }
@@ -567,14 +644,14 @@ Medium devices (640px and larger)
     margin: 0
   }
 
-  #inktank_colour_3 .arrow_right {
+  #inktank_colour_3 .inktank_arrow_right {
     display: unset;
     display: block;
     margin-top: 60%;
     width: 40%
   }
 
-  #inktank_colour_3 .arrow_left {
+  #inktank_colour_3 .inktank_arrow_left {
     display: unset;
     display: block;
     margin-top: 100%;
@@ -586,7 +663,7 @@ Medium devices (640px and larger)
     margin: 0
   }
 
-  #inktank_colour_8 .arrow_right {
+  #inktank_colour_8 .inktank_arrow_right {
     display: unset;
     display: block;
     margin-top: 60%;
@@ -594,7 +671,7 @@ Medium devices (640px and larger)
     width: 40%
   }
 
-  #inktank_colour_8 .arrow_left {
+  #inktank_colour_8 .inktank_arrow_left {
     display: unset;
     display: block;
     margin-top: 120%;
@@ -606,7 +683,7 @@ Medium devices (640px and larger)
     margin: 0
   }
 
-  #inktank_colour_10 .arrow_right {
+  #inktank_colour_10 .inktank_arrow_right {
     display: unset;
     display: block;
     margin-top: 80%;
@@ -649,6 +726,32 @@ Medium devices (640px and larger)
     width: 80%;
     margin: auto;
   }
+
+  #inktank_colour_10 .improvements {
+    margin-left: 300px
+  }
+
+  #demo {
+    height: 378px;
+    width: 627px
+  }
+
+  #inktank_colour_12 {
+    display: unset;
+  }
+
+  #inktank_colour_13 {
+    background-color: #FFFFFF;
+  }
+
+  /* /////////////// RESOLUTE modifications /////////////// */
+
+
+  .resolute_arrow_left, .resolute_arrow_right {
+    display: unset
+  }
+
+
 }
 
 /* ==============================
@@ -656,9 +759,15 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-  /*GENERAL modifications*/
+  /* /////////////// GENERAL modifications /////////////// */
   .container {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .container {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -672,7 +781,7 @@ Large devices (1024px or larger)
   }
 
   main {
-    padding-top: 82.5px;
+    padding-top: 95px;
   }
 
   footer {
@@ -692,7 +801,7 @@ Large devices (1024px or larger)
     width: 41.67%;
   }
 
-  /*INDEX modifications*/
+  /* /////////////// INDEX modifications /////////////// */
   #hero {
     padding: 50px 80px;
   }
@@ -712,17 +821,13 @@ Large devices (1024px or larger)
     max-width: 150px;
   }
 
-  /*ABOUT modifications*/
+  /* /////////////// ABOUT modifications /////////////// */
   .profile_image {
     padding-top: 20px;
     width: 60%
   }
 
-  #about .center {
-    text-align: unset;
-  }
-
-  /*INKTANK modifications*/
+  /* /////////////// INKTANK modifications /////////////// */
   #inktank h2 {
     font-size: 6.5em;
   }
@@ -730,6 +835,32 @@ Large devices (1024px or larger)
   #inktank h3 {
     font-size: 1em;
     margin-top: 40px;
+  }
+
+  #inktank_colour_1 {
+    padding: 60px 0 80px 0;
+  }
+
+  #inktank_colour_3,
+  #inktank_colour_5,
+  #inktank_colour_7,
+  #inktank_colour_9,
+  #inktank_colour_11,
+  #inktank_colour_13 {
+    background-color: #FAF3EB;
+    padding-bottom: 80px;
+    width: 100%;
+  }
+
+  #inktank_colour_2,
+  #inktank_colour_4,
+  #inktank_colour_6,
+  #inktank_colour_8,
+  #inktank_colour_10,
+  #inktank_colour_12 {
+    background-color: #FFFFFF;
+    padding-bottom: 80px;
+    width: 100%;
   }
 
   #inktank .inktank_logo {
@@ -749,14 +880,14 @@ Large devices (1024px or larger)
     margin: auto;
   }
 
-  #inktank_colour_3 .arrow_right {
+  #inktank_colour_3 .inktank_arrow_right {
     display: unset;
     display: block;
     margin-top: 30%;
     width: 40%
   }
 
-  #inktank_colour_3 .arrow_left {
+  #inktank_colour_3 .inktank_arrow_left {
     display: unset;
     display: block;
     margin-top: 40%;
@@ -764,7 +895,7 @@ Large devices (1024px or larger)
     width: 40%
   }
 
-  #inktank_colour_8 .arrow_right {
+  #inktank_colour_8 .inktank_arrow_right {
     display: unset;
     display: block;
     margin-top: 35%;
@@ -772,7 +903,7 @@ Large devices (1024px or larger)
     width: 40%
   }
 
-  #inktank_colour_8 .arrow_left {
+  #inktank_colour_8 .inktank_arrow_left {
     display: unset;
     display: block;
     margin-top: 60%;
@@ -780,7 +911,7 @@ Large devices (1024px or larger)
     width: 40%
   }
 
-  #inktank_colour_10 .arrow_right {
+  #inktank_colour_10 .inktank_arrow_right {
     display: unset;
     display: block;
     margin-top: 30%;
@@ -849,6 +980,15 @@ Large devices (1024px or larger)
     display: block;
     width: 80%;
     margin: auto;
+  }
+
+  #demo {
+    height: 409.5px;
+    width: 728px
+  }
+
+  #invision {
+    width: 40%
   }
 }
 
