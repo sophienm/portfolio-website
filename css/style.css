@@ -9,10 +9,11 @@ Secondary Colour (Light Grey): #EEEEEE
 Inktank Background Colour (Rose): #FAF3EB
 Inktank Font Colour (Dark Rose): #E4D0C7
 Inktank Font Colour (Light Rose): #F3EAE1
-Resoliute. Font Colour (Light Grey): #F5F5F5
-Resoliute. Font Colour (Turquoise): #02CBCB
+Resolute. Font Colour (Light Grey): #F5F5F5
+Resolute. Font Colour (Turquoise): #02CBCB
+Resolute. Background Colour (Turquoise): #86E6E6
+Resolute. Background Colour (Light Grey): #F5F5F5
 */
-
 * {
   box-sizing: border-box;
 }
@@ -248,9 +249,9 @@ footer {
   text-align: center;
 }
 
-.icon {
+footer .icon {
   width: 48px;
-  margin: 10px
+  margin: 6px
     /* size of social icons */
 }
 
@@ -278,7 +279,7 @@ footer {
 
 .resolute_logo {
   margin-top: 25px;
-  max-width: 100px;
+  max-width: 120px;
 }
 
 /* /////////////// ABOUT modifications /////////////// */
@@ -329,7 +330,6 @@ footer {
 #inktank_colour_13 {
   background-color: #FAF3EB;
   padding: 30px 0;
-  width: 100%;
 }
 
 #inktank_colour_2,
@@ -340,15 +340,18 @@ footer {
 #inktank_colour_12 {
   background-color: #FFFFFF;
   padding: 30px 0;
-  width: 100%;
 }
 
 .intro_title {
   text-align: center;
 }
 
+#inktank .inktank_logo {
+  max-width: 170px
+}
+
 .tagline {
-  margin-top: 5px
+  margin-top: 15px
 }
 
 .inktank_mockup1 {
@@ -375,7 +378,6 @@ footer {
 }
 
 /* /////////////// RESOLUTE modifications /////////////// */
-
 #resolute h2 {
   font-family: 'Muli';
   line-height: 1.4;
@@ -394,41 +396,88 @@ footer {
   font-size: 1.1em;
 }
 
-#resolute_colour_3 .row {
+#resolute_colour_1 .row {
   margin-top: 0
 }
 
-#inktank_colour_12 {
-  display: none
+#resolute_colour_1,
+#resolute_colour_9 {
+  display: inline-block;
+  background-color: #F5F5F5;
+  padding: 30px 0;
 }
 
-#inktank_colour_1,
-#inktank_colour_3,
-#inktank_colour_5,
-#inktank_colour_7,
-#inktank_colour_9,
-#inktank_colour_11,
-#inktank_colour_13 {
-  background-color: #FAF3EB;
+#resolute_colour_2,
+#resolute_colour_4,
+#resolute_colour_6,
+#resolute_colour_7 {
+  background-color: #86E6E6;
   padding: 30px 0;
-  width: 100%;
 }
 
-#inktank_colour_2,
-#inktank_colour_4,
-#inktank_colour_6,
-#inktank_colour_8,
-#inktank_colour_10,
-#inktank_colour_12 {
-  background-color: #FFFFFF;
+#resolute_colour_3 {
+  display: inline-block;
+  background-image: linear-gradient(#F5F5F5 87%, #86E6E6 13%);
   padding: 30px 0;
-  width: 100%;
+}
+
+#resolute_colour_5 {
+  display: inline-block;
+  background-image: linear-gradient(#86E6E6 40%, #F5F5F5 20%,#F5F5F5 82%, #86E6E6 10%);
+  padding: 30px 0;
+}
+
+#resolute_colour_8 {
+  display: inline-block;
+  background-image: linear-gradient(to top, #F5F5F5 63%, #86E6E6 13%);
+}
+
+#resolute_colour_2 h2,
+#resolute_colour_4 h2,
+#resolute_colour_5 h2,
+#resolute_colour_6 h2,
+#resolute_colour_7 h2,
+#resolute_colour_8 h2 {
+  color: #F5F5F5;
+}
+
+#resolute_colour_3 h2,
+#resolute_colour_9 h2 {
+  color: #02CBCB;
+}
+
+#resolute .resolute_logo {
+  max-width: 200px
+}
+
+.resolute_mockup_1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px
+}
+
+.resolute_gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70%
+}
+
+
+.resolute_mockup_3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 50px
 }
 
 .resolute_arrow_left, .resolute_arrow_right {
   display: none
 }
-
 
 /* /////////ANIMATION////////// */
 @keyframes color-rec {
@@ -441,11 +490,9 @@ footer {
   }
 }
 
-rect{
+rect {
   animation: 4s color-rec infinite alternate linear
 }
-
-
 
 .berlin-illustration {
   display: none
@@ -463,8 +510,6 @@ rect{
   100% {
     fill: #f76414;
   }
-
-
 }
 
 .sun {
@@ -745,13 +790,9 @@ Medium devices (640px and larger)
   }
 
   /* /////////////// RESOLUTE modifications /////////////// */
-
-
   .resolute_arrow_left, .resolute_arrow_right {
     display: unset
   }
-
-
 }
 
 /* ==============================
