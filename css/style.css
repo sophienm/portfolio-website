@@ -750,6 +750,10 @@ Medium devices (640px and larger)
     display: block;
   }
 
+  #skills_tools .col-md-6 {
+    padding-left: 60px;
+  }
+
   /* /////////////// INKTANK modifications /////////////// */
   #inktank h2 {
     font-size: 4.5em;
