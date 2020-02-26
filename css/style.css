@@ -185,6 +185,24 @@ a:focus {
   border-bottom: 3px solid #1d1d1b;
 }
 
+#tooltip {
+  background: #333;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+#tooltip {
+  /* ... */
+  display: none;
+}
+
+#tooltip[data-show] {
+  display: block;
+}
+
 header {
   background-color: #fff;
   padding: 10px 0 4px;
@@ -304,11 +322,12 @@ footer .icon {
   width: 80%;
 }
 
-#skills .row {
+#skills_tools .row {
   margin-top: 0;
 }
 
 /* /////////////// INKTANK modifications /////////////// */
+
 #inktank h2 {
   font-family: 'Muli';
   line-height: 1.4;
@@ -329,10 +348,6 @@ footer .icon {
 
 #inktank_colour_1 .row {
   margin-top: 0;
-}
-
-#inktank_colour_12 {
-  display: none;
 }
 
 #inktank_colour_1,
@@ -392,6 +407,10 @@ footer .icon {
   width: 80%;
 }
 
+#inktank_colour_12 {
+  display: none;
+}
+
 /* /////////////// RESOLUTE modifications /////////////// */
 #resolute h2 {
   font-family: 'Muli';
@@ -415,10 +434,6 @@ footer .icon {
   margin-top: 0;
 }
 
-#resolute_colour_11 {
-  display: none;
-}
-
 #resolute_colour_1,
 #resolute_colour_3,
 #resolute_colour_9,
@@ -427,6 +442,10 @@ footer .icon {
 #resolute_colour_12 {
   background-color: #f5f5f5;
   padding: 30px 0;
+}
+
+#resolute_colour_11 {
+  display: none;
 }
 
 #resolute_colour_2,
@@ -439,13 +458,11 @@ footer .icon {
 }
 
 #resolute_colour_4 {
-  display: inline-block;
   background-image: linear-gradient(#f5f5f5 75%, #86e6e6 13%);
   padding: 30px 0;
 }
 
 #resolute_colour_6 {
-  display: inline-block;
   background-image: linear-gradient(#86e6e6 40%, #f5f5f5 20%, #f5f5f5 82%, #86e6e6 10%);
   padding: 30px 0;
 }
@@ -495,95 +512,22 @@ footer .icon {
   margin: 60px auto 0;
 }
 
-.resolute_arrow_left,
-.resolute_arrow_right {
-  display: none;
-}
-
 /* Resolute. protoype */
 #main {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #iphone-x {
-  position: relative;
   margin: 40px auto;
-  width: 375px;
-  height: 812px;
-  border-radius: 40px;
+  width: 277px;
+  height: 600px;
+  border-radius: 30px;
   background-color: #1f1f1f;
-  box-shadow: 0 0 0 11px #1f1f1f, 0 0 0 13px #191919, 0 0 0 20px #111, 8px 8px 40px #000;
+  box-shadow: 0 0 0 11px #1f1f1f, 0 0 0 13px #191919, 0 0 0 16px #111, 8px 8px 40px #000;
   overflow: hidden;
 }
-
-&::before,
-&::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* home button indicator */
-&::after {
-  bottom: 7px;
-  width: 140px;
-  height: 4px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-}
-
-/* frontal camera/speaker frame */
-&::before {
-  top: 0;
-  width: 56%;
-  height: 30px;
-  background-color: #1f1f1f;
-  border-radius: 0 0 40px 40px;
-}
-
-#speaker {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: 2;
-  transform: translate(-50%, 6px);
-  height: 8px;
-  width: 15%;
-  background-color: #101010;
-  border-radius: 8px;
-  box-shadow: inset 0 -3px 3px 0 rgba(256, 256, 256, 0.2);
-}
-
-#camera {
-  position: absolute;
-  left: 10%;
-  top: 0;
-  z-index: 3;
-  transform: translate(180px, 4px);
-  width: 12px;
-  height: 12px;
-  background-color: #101010;
-  border-radius: 12px;
-  box-shadow: inset 0 -3px 2px 0 rgba(256, 256, 256, 0.2);
-}
-
-&::after {
-  content: '';
-  position: absolute;
-  background-color: #2d4d76;
-  width: 6px;
-  height: 6px;
-  top: 2px;
-  left: 2px;
-  top: 3px;
-  left: 3px;
-  display: block;
-  border-radius: 4px;
-  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* /////////ANIMATION////////// */
@@ -597,7 +541,7 @@ footer .icon {
   }
 }
 
-rect {
+.st0 {
   animation: 4s color-rec infinite alternate linear;
 }
 
@@ -722,6 +666,10 @@ Medium devices (640px and larger)
     font-size: 0.9em;
   }
 
+  .col-md-4 {
+    width: 33.33%;
+  }
+
   .col-md-5 {
     width: 41.67%;
   }
@@ -750,6 +698,7 @@ Medium devices (640px and larger)
     display: block;
   }
 
+  /* /////////////// ABOUT modifications /////////////// */
   #skills_tools .col-md-6 {
     padding-left: 60px;
   }
@@ -832,7 +781,7 @@ Medium devices (640px and larger)
   #inktank_colour_8 .inktank_arrow_right {
     display: unset;
     display: block;
-    margin-top: 60%;
+    margin-top: 50%;
     margin-right: 50%;
     width: 40%;
   }
@@ -840,7 +789,7 @@ Medium devices (640px and larger)
   #inktank_colour_8 .inktank_arrow_left {
     display: unset;
     display: block;
-    margin-top: 120%;
+    margin-top: 100%;
     margin-left: 60%;
     width: 40%;
   }
@@ -903,7 +852,7 @@ Medium devices (640px and larger)
   }
 
   #inktank_colour_12 {
-    display: unset;
+    display: block;
   }
 
   #inktank_colour_13 {
@@ -921,45 +870,74 @@ Medium devices (640px and larger)
 
   #resolute .resolute_logo {
     max-width: 230px;
+    margin-top: 30px;
   }
-.resolute_mockup_1 {
-  display: none;
-}
 
-#resolute_colour_1 {
-  background-image: url('img/project_resolute./resolute_mockup_1@1x.png');
-}
+  .resolute_mockup_1 {
+    display: none;
+  }
+
+  #resolute_colour_1 {
+    padding: 0;
+    background-image: linear-gradient(#f5f5f5 23%, #86e6e6 13%);
+    background-size: 100%;
+    background-position: center center;
+  }
+
+  #resolute_colour_1 .container {
+    padding-top: 50px;
+    padding-bottom: 140px;
+    background-image: url('../img/project_resolute./resolute_mockup_1@1x.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 100% 40%;
+  }
 
   #resolute_colour_2 .row {
     margin: 0;
   }
 
-
-  #resolute_colour_2 .resolute_arrow_left {
-    display: unset;
-    display: block;
-    margin-top: 0;
-    margin-left: 50%;
-    width: 50%;
+  #resolute_colour_2 {
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 
-  #resolute_colour_2 .resolute_arrow_right {
-    display: unset;
-    display: block;
-    margin-top: 0;
-    margin-right: 50%;
-    width: 65%;
-  }
-
-  #resolute_colour_11 {
+  .resolute_research {
     display: none;
   }
 
-.resolute_research {
-  display: none;
-}
+  #resolute_colour_3 .row {
+    margin-top: 130px;
+  }
 
+  #resolute_colour_3 .container {
+    padding-bottom: 200px;
+    background-image: url('../img/project_resolute./resolute_research_640@2x.png');
+    background-repeat: no-repeat;
+    background-size: 520px;
+    background-position: 100% 85%;
+  }
 
+  .resolute_user_flows {
+    display: none;
+  }
+
+  #resolute_colour_4 {
+    background-image: linear-gradient(#f5f5f5 70%, #86e6e6 13%);
+  }
+
+  #resolute_colour_4 .container {
+    padding-bottom: 120px;
+    background-image: url('../img/project_resolute./resolute_user_flows_640@2x.png');
+    background-repeat: no-repeat;
+    background-size: 420px;
+    background-position: 100% 90%;
+  }
+
+  #resolute_colour_11 {
+    display: block;
+    /* makes background colour visible */
+  }
 }
 
 /* ==============================
@@ -1009,6 +987,10 @@ Large devices (1024px or larger)
     width: 41.67%;
   }
 
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
   /* /////////////// INDEX modifications /////////////// */
   #hero {
     padding: 50px 80px;
@@ -1033,6 +1015,10 @@ Large devices (1024px or larger)
   .profile_image {
     padding-top: 20px;
     width: 60%;
+  }
+
+  #skills_tools .col-md-6 {
+    padding-left: 180px;
   }
 
   /* /////////////// INKTANK modifications /////////////// */
@@ -1180,7 +1166,7 @@ Large devices (1024px or larger)
 
   .prototype_evolution {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -1202,6 +1188,61 @@ Large devices (1024px or larger)
 
   #inktank_colour_13 {
     background-color: #fff;
+  }
+
+  /* /////////////// RESOLUTE. modifications /////////////// */
+  #resolute h2 {
+    font-size: 6.5em;
+  }
+
+  #resolute h3 {
+    font-size: 1em;
+    margin-top: 40px;
+  }
+
+  #resolute .resolute_logo {
+    margin-top: 190px;
+    max-width: 330px;
+  }
+
+  #resolute_colour_1 {
+    background-image: linear-gradient(#f5f5f5 30.5%, #86e6e6 13%);
+  }
+
+  #resolute_colour_1 .container {
+    padding: 0 0 250px;
+    background-image: url('../img/project_resolute./resolute_mockup_1@2x.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 100% 40%;
+  }
+
+  #resolute_colour_3 .row {
+    margin-top: 230px;
+  }
+
+  #resolute_colour_3 .container {
+    padding-bottom: 320px;
+    background-image: url('../img/project_resolute./resolute_research@2x.png');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 100% 100%;
+  }
+
+  #resolute_colour_4 .row {
+    margin-top: 50px;
+  }
+
+  #resolute_colour_4 {
+    background-image: linear-gradient(#f5f5f5 70%, #86e6e6 13%);
+  }
+
+  #resolute_colour_4 .container {
+    padding-bottom: 280px;
+    background-image: url('../img/project_resolute./resolute_user_flows@2x.png');
+    background-repeat: no-repeat;
+    background-size: 730px;
+    background-position: 100% 100%;
   }
 }
 
