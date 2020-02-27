@@ -1,6 +1,6 @@
 console.log('Hi! Welcome to my portfolio website.')
 
-function menuToggle () {
+function menuToggle() {
   var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
     x.className += ' responsive'
@@ -9,12 +9,8 @@ function menuToggle () {
   }
 }
 
-const button = document.querySelector('#button');
-      const tooltip = document.querySelector('#tooltip');
 
-      Popper.createPopper(button, tooltip);
 
-      function show() {
 //* COPY EMAIL TO CLIPBOARD *//
 
 $(document).ready(function() {
@@ -58,6 +54,11 @@ function copyToClipboard(text) {
     document.execCommand('copy');
     document.body.removeChild(dummy);
 }
+
+
+//* TOOLTIPS *//
+
+function show() {
   tooltip.setAttribute('data-show', '');
 }
 
@@ -80,14 +81,12 @@ let popperInstance = null;
 
 function create() {
   popperInstance = Popper.createPopper(button, tooltip, {
-    modifiers: [
-      {
-        name: 'offset',
-        options: {
-          offset: [0, 8],
-        },
+    modifiers: [{
+      name: 'offset',
+      options: {
+        offset: [0, 8],
       },
-    ],
+    }, ],
   });
 }
 
@@ -110,7 +109,6 @@ function hide() {
 
 
 
-
 function generateGetBoundingClientRect(x = 0, y = 0) {
   return () => ({
     width: 0,
@@ -128,7 +126,10 @@ const virtualElement = {
 
 const instance = createPopper(virtualElement, popper);
 
-document.addEventListener('mousemove', ({ clientX: x, clientY: y }) => {
+document.addEventListener('mousemove', ({
+  clientX: x,
+  clientY: y
+}) => {
   virtualElement.getBoundingClientRect = generateGetBoundingClientRect(x, y);
   instance.update();
 });
