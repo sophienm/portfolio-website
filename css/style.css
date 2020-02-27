@@ -214,8 +214,11 @@ a:focus {
 .mailto-link:focus-within .mailto-message {
 	display: block;
 }
+
+
+/* TOOLTIPS */
 #tooltip {
-  background: #333;
+  background: #1d1d1b;
   color: white;
   font-weight: bold;
   padding: 4px 8px;
@@ -308,6 +311,7 @@ main {
 footer {
   background-color: #fafafa;
   text-align: center;
+  padding: 30px 0 15px;
 }
 
 footer .icon {
@@ -315,6 +319,8 @@ footer .icon {
   margin: 6px;
   /* size of social icons */
 }
+
+
 
 /* /////////////// INDEX modifications /////////////// */
 #work .row {
@@ -354,6 +360,21 @@ footer .icon {
 #skills_tools .row {
   margin-top: 0;
 }
+
+/* /////////////// CONTACT modifications /////////////// */
+
+#contact {
+  text-align: center;
+  padding: 80px 0
+}
+
+#contact_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%
+/* footer always placed at bottom of page not matter length of content */
+}
+
 
 /* /////////////// INKTANK modifications /////////////// */
 
@@ -659,13 +680,13 @@ Medium devices (640px and larger)
 
   a {
     border-bottom: 10px solid #00ff80;
-    height: 22px;
+    height: 23px;
   }
 
   a:hover,
   a:focus {
     border-bottom: 10px solid #00ffed;
-    height: 22px;
+    height: 23px;
   }
 
   main {
@@ -684,6 +705,8 @@ Medium devices (640px and larger)
 
   #work p,
   #contact p,
+  #contact a,
+  #contact_footer p,
   #about p,
   #about ul,
   #inktank p,
@@ -694,6 +717,10 @@ Medium devices (640px and larger)
   #resolute ol {
     font-size: 0.9em;
   }
+
+.footer p {
+  font-size: 0.9em;
+}
 
   .col-md-4 {
     width: 33.33%;
@@ -730,6 +757,17 @@ Medium devices (640px and larger)
   /* /////////////// ABOUT modifications /////////////// */
   #skills_tools .col-md-6 {
     padding-left: 60px;
+  }
+
+  /* /////////////// CONTACT modifications /////////////// */
+
+  #contact {
+    text-align: center;
+    padding: 110px 0
+  }
+
+  #contact p {
+    margin-top: 40px;
   }
 
   /* /////////////// INKTANK modifications /////////////// */
@@ -1000,8 +1038,7 @@ Large devices (1024px or larger)
   }
 
   footer {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding: 30px 0 15px;
   }
 
   .col-lg-7 {
