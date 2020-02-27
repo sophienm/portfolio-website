@@ -185,6 +185,35 @@ a:focus {
   border-bottom: 3px solid #1d1d1b;
 }
 
+
+/* MAIL TO / copy to clipboard */
+.mailto-link {
+	position: relative;
+}
+.mailto-message {
+  background: #1d1d1b;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+	top: 1px;
+	left: 50%;
+	margin-bottom: -5px;
+	transform: translate(-50%, -100%);
+	position: absolute;
+	display: none;
+	width: auto;
+	white-space: nowrap;
+	padding: 4px 8px;
+	border-radius: 4px;
+	&:after {
+		content: '';
+	}
+}
+.mailto-link:hover .mailto-message,
+.mailto-link:focus .mailto-message,
+.mailto-link:focus-within .mailto-message {
+	display: block;
+}
 #tooltip {
   background: #333;
   color: white;
