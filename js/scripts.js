@@ -106,30 +106,3 @@ function hide() {
   tooltip.removeAttribute('data-show');
   destroy();
 }
-
-
-
-function generateGetBoundingClientRect(x = 0, y = 0) {
-  return () => ({
-    width: 0,
-    height: 0,
-    top: y,
-    right: x,
-    bottom: y,
-    left: x,
-  });
-}
-
-const virtualElement = {
-  getBoundingClientRect: generateGetBoundingClientRect(),
-};
-
-const instance = createPopper(virtualElement, popper);
-
-document.addEventListener('mousemove', ({
-  clientX: x,
-  clientY: y
-}) => {
-  virtualElement.getBoundingClientRect = generateGetBoundingClientRect(x, y);
-  instance.update();
-});
