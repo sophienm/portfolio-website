@@ -185,36 +185,37 @@ a:focus {
   border-bottom: 3px solid #1d1d1b;
 }
 
-
 /* MAIL TO / copy to clipboard */
 .mailto-link {
-	position: relative;
+  position: relative;
 }
+
 .mailto-message {
   background: #1d1d1b;
   color: white;
   font-size: 13px;
   font-weight: bold;
-	top: 1px;
-	left: 50%;
-	margin-bottom: -5px;
-	transform: translate(-50%, -100%);
-	position: absolute;
-	display: none;
-	width: auto;
-	white-space: nowrap;
-	padding: 4px 8px;
-	border-radius: 4px;
-	&:after {
-		content: '';
-	}
+  top: 1px;
+  left: 50%;
+  margin-bottom: -5px;
+  transform: translate(-50%, -100%);
+  position: absolute;
+  display: none;
+  width: auto;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  &:after {
+    content: '';
+  }
 }
+
 .mailto-link:hover .mailto-message,
 .mailto-link:focus .mailto-message,
 .mailto-link:focus-within .mailto-message {
-	display: block;
+  display: block;
 }
-
 
 /* TOOLTIPS */
 #tooltip {
@@ -320,8 +321,6 @@ footer .icon {
   /* size of social icons */
 }
 
-
-
 /* /////////////// INDEX modifications /////////////// */
 #work .row {
   margin-bottom: 50px;
@@ -362,7 +361,6 @@ footer .icon {
 }
 
 /* /////////////// CONTACT modifications /////////////// */
-
 #contact {
   text-align: center;
   padding: 80px 0
@@ -372,12 +370,10 @@ footer .icon {
   position: absolute;
   bottom: 0;
   width: 100%
-/* footer always placed at bottom of page not matter length of content */
+    /* footer always placed at bottom of page not matter length of content */
 }
 
-
 /* /////////////// INKTANK modifications /////////////// */
-
 #inktank h2 {
   font-family: 'Muli';
   line-height: 1.4;
@@ -406,7 +402,7 @@ footer .icon {
 #inktank_colour_7,
 #inktank_colour_9,
 #inktank_colour_11,
-#inktank_colour_13 {
+#inktank_colour_12 {
   background-color: #faf3eb;
   padding: 30px 0;
 }
@@ -415,8 +411,7 @@ footer .icon {
 #inktank_colour_4,
 #inktank_colour_6,
 #inktank_colour_8,
-#inktank_colour_10,
-#inktank_colour_12 {
+#inktank_colour_10 {
   background-color: #fff;
   padding: 30px 0;
 }
@@ -445,9 +440,26 @@ footer .icon {
   display: none;
 }
 
-.inktank_arrow_left,
-.inktank_arrow_right {
-  display: none;
+.prototype_evolution_gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+video {
+  margin: 60px 0 30px;
+  display: block;
+  width: 100%;
+}
+
+.prototype_evolution {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .inktank_mockup2 {
@@ -457,7 +469,7 @@ footer .icon {
   width: 80%;
 }
 
-#inktank_colour_12 {
+#inktank_colour_11 {
   display: none;
 }
 
@@ -718,9 +730,9 @@ Medium devices (640px and larger)
     font-size: 0.9em;
   }
 
-.footer p {
-  font-size: 0.9em;
-}
+  .footer p {
+    font-size: 0.9em;
+  }
 
   .col-md-4 {
     width: 33.33%;
@@ -760,7 +772,6 @@ Medium devices (640px and larger)
   }
 
   /* /////////////// CONTACT modifications /////////////// */
-
   #contact {
     text-align: center;
     padding: 110px 0
@@ -779,40 +790,54 @@ Medium devices (640px and larger)
     font-size: 0.8em;
   }
 
-  #inktank .inktank_logo {
-    max-width: 200px;
+  #inktank_colour_1,
+  #inktank_colour_2,
+  #inktank_colour_3,
+  #inktank_colour_4,
+  #inktank_colour_5,
+  #inktank_colour_6,
+  #inktank_colour_7,
+  #inktank_colour_8,
+  #inktank_colour_9,
+  #inktank_colour_10
+  #inktank_colour_11,
+  #inktank_colour_12 {
+    padding-bottom: 50px;
+  }
+
+  #inktank_colour_1 {
+    padding-top: 50px;
   }
 
   #inktank_colour_1 .row {
-    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  #inktank_colour_1 .col-md-7 {
+    padding-left: 0;
+  }
+
+  #inktank_colour_1 .col-md-5 {
+    padding-right: 0;
+  }
+
+  #my_role {
+    padding-left: 0;
+  }
+
+  #tools {
+    padding-left: 45px;
+  }
+
+  #inktank .inktank_logo {
+    max-width: 220px;
   }
 
   .intro_title {
     text-align: unset;
     display: block;
-    margin-top: 0;
-  }
-
-  .intro_description_l {
-    display: unset;
-    display: block;
-    margin-top: 70px;
-  }
-
-  .intro_description_l h3 {
-    padding: 0;
-  }
-
-  .intro_description_l>.row {
-    margin-top: 0;
-  }
-
-  #timeline {
-    padding-left: 0;
-  }
-
-  #inktank_colour_2 {
-    display: none;
+    margin-top: 60px;
+    margin-left: 20px;
   }
 
   .inktank_mockup1 {
@@ -822,55 +847,40 @@ Medium devices (640px and larger)
     margin-right: 0;
   }
 
+  .intro_description_s {
+    margin-top: 40px;
+  }
+
+  .prototype_evolution_gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  video {
+    display: block;
+    height: 378px;
+    width: 100%;
+  }
+
   #inktank_colour_3 .row {
     margin: 0;
-  }
-
-  #inktank_colour_3 .inktank_arrow_right {
-    display: unset;
-    display: block;
-    margin-top: 60%;
-    width: 40%;
-  }
-
-  #inktank_colour_3 .inktank_arrow_left {
-    display: unset;
-    display: block;
-    margin-top: 100%;
-    margin-left: 60%;
-    width: 40%;
   }
 
   #inktank_colour_8 .row {
     margin: 0;
   }
 
-  #inktank_colour_8 .inktank_arrow_right {
-    display: unset;
-    display: block;
-    margin-top: 50%;
-    margin-right: 50%;
-    width: 40%;
-  }
-
-  #inktank_colour_8 .inktank_arrow_left {
-    display: unset;
-    display: block;
-    margin-top: 100%;
-    margin-left: 60%;
-    width: 40%;
-  }
-
   #inktank_colour_10 .row {
     margin: 0;
   }
 
-  #inktank_colour_10 .inktank_arrow_right {
-    display: unset;
-    display: block;
-    margin-top: 80%;
-    margin-right: 50%;
-    width: 40%;
+  #inktank_colour_8 .col-lg-7,
+  #inktank_colour_10 .col-lg-7 {
+    padding: 0;
   }
 
   .affinity_map_1 {
@@ -903,27 +913,13 @@ Medium devices (640px and larger)
     width: 80%;
   }
 
-  .prototype_evolution {
-    display: block;
-    width: 80%;
-    margin: auto;
-  }
-
-  #inktank_colour_10 .improvements {
-    margin-left: 300px;
-  }
-
   #demo {
     height: 378px;
     width: 627px;
   }
 
-  #inktank_colour_12 {
+  #inktank_colour_11 {
     display: block;
-  }
-
-  #inktank_colour_13 {
-    background-color: #fff;
   }
 
   /* /////////////// RESOLUTE modifications /////////////// */
@@ -1105,8 +1101,7 @@ Large devices (1024px or larger)
   #inktank_colour_5,
   #inktank_colour_7,
   #inktank_colour_9,
-  #inktank_colour_11,
-  #inktank_colour_13 {
+  #inktank_colour_12 {
     background-color: #faf3eb;
     padding-bottom: 80px;
     width: 100%;
@@ -1117,14 +1112,22 @@ Large devices (1024px or larger)
   #inktank_colour_6,
   #inktank_colour_8,
   #inktank_colour_10,
-  #inktank_colour_12 {
+  #inktank_colour_11 {
     background-color: #fff;
     padding-bottom: 80px;
     width: 100%;
   }
 
+  #inktank_colour_1 .col-lg-6 {
+    padding-left: 0;
+  }
+
+  .intro_title {
+    margin-left: 0;
+  }
+
   #inktank .inktank_logo {
-    margin-top: 50px;
+    margin-top: 25px;
     max-width: 300px;
   }
 
@@ -1134,49 +1137,18 @@ Large devices (1024px or larger)
     margin-top: 90px;
   }
 
+  .intro_description_s {
+    display: none;
+  }
+
   .inktank_mockup1 {
     display: block;
     width: 70%;
     margin: auto;
   }
 
-  #inktank_colour_3 .inktank_arrow_right {
-    display: unset;
-    display: block;
-    margin-top: 30%;
-    width: 40%;
-  }
-
-  #inktank_colour_3 .inktank_arrow_left {
-    display: unset;
-    display: block;
-    margin-top: 40%;
-    margin-left: 60%;
-    width: 40%;
-  }
-
-  #inktank_colour_8 .inktank_arrow_right {
-    display: unset;
-    display: block;
-    margin-top: 35%;
-    margin-right: 50%;
-    width: 40%;
-  }
-
-  #inktank_colour_8 .inktank_arrow_left {
-    display: unset;
-    display: block;
-    margin-top: 60%;
-    margin-left: 60%;
-    width: 40%;
-  }
-
-  #inktank_colour_10 .inktank_arrow_right {
-    display: unset;
-    display: block;
-    margin-top: 30%;
-    margin-right: 50%;
-    width: 40%;
+  #tools {
+    padding-left: 62px;
   }
 
   .affinity_map_1 {
@@ -1220,6 +1192,10 @@ Large devices (1024px or larger)
     width: 80%;
   }
 
+  #inktank_colour_8 .test_objectives {
+    margin-left: 330px;
+  }
+
   .affinity_map_2 {
     display: block;
     width: 80%;
@@ -1242,18 +1218,13 @@ Large devices (1024px or larger)
     margin: auto;
   }
 
-  #demo {
-    height: 409.5px;
-    width: 728px;
+  #inktank_colour_10 .improvements {
+    margin-left: 330px;
   }
 
   #invision {
-    width: 40%;
-    border: none;
-  }
 
-  #inktank_colour_13 {
-    background-color: #fff;
+    border: none;
   }
 
   /* /////////////// RESOLUTE. modifications /////////////// */
