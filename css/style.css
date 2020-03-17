@@ -375,6 +375,7 @@ footer .icon {
 }
 
 /* /////////////// INKTANK modifications /////////////// */
+
 #inktank a {
   text-decoration: underline;
   border-bottom: none;
@@ -384,6 +385,7 @@ footer .icon {
 color: #a78678;
 text-decoration: underline #a78678;
 }
+
 #inktank h2 {
   font-family: 'Muli';
   line-height: 1.4;
@@ -426,7 +428,7 @@ text-decoration: underline #a78678;
   padding: 30px 0;
 }
 
-.intro_title {
+#inktank .intro_title {
   text-align: center;
 }
 
@@ -488,7 +490,9 @@ video {
   font-weight: 800;
   color: #a78678;
 }
+
 /* /////////////// RESOLUTE modifications /////////////// */
+
 #resolute a {
   text-decoration: underline;
   border-bottom: none;
@@ -498,6 +502,7 @@ video {
 color: #f5f5f5;
 text-decoration: underline #f5f5f5;
 }
+
 #resolute h2 {
   font-family: 'Muli';
   line-height: 1.4;
@@ -530,13 +535,8 @@ text-decoration: underline #f5f5f5;
   padding: 30px 0;
 }
 
-#resolute_colour_11 {
-  display: none;
-}
-
 #resolute_colour_2,
 #resolute_colour_5,
-#resolute_colour_6,
 #resolute_colour_7,
 #resolute_colour_8 {
   background-color: #86e6e6;
@@ -549,7 +549,7 @@ text-decoration: underline #f5f5f5;
 }
 
 #resolute_colour_6 {
-  background-image: linear-gradient(#86e6e6 40%, #f5f5f5 20%, #f5f5f5 82%, #86e6e6 10%);
+  background-image: linear-gradient(#86e6e6 45%, #f5f5f5 20%, #f5f5f5 81%, #86e6e6 10%);
   padding: 30px 0;
 }
 
@@ -575,6 +575,10 @@ text-decoration: underline #f5f5f5;
   color: #02cbcb;
 }
 
+#resolute .intro_title {
+  text-align: center;
+}
+
 #resolute .resolute_logo {
   max-width: 200px;
 }
@@ -598,87 +602,14 @@ text-decoration: underline #f5f5f5;
   margin: 60px auto 0;
 }
 
-/* Resolute. protoype */
-#main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#resolute .thank_you {
+  font-size: 2em;
+  font-weight: 800;
+  color: #02cbcb;
 }
 
-#iphone-x {
-  margin: 40px auto;
-  width: 277px;
-  height: 600px;
-  border-radius: 30px;
-  background-color: #1f1f1f;
-  box-shadow: 0 0 0 11px #1f1f1f, 0 0 0 13px #191919, 0 0 0 16px #111, 8px 8px 40px #000;
-  overflow: hidden;
-}
-}
-
-/* /////////ANIMATION////////// */
-@keyframes color-rec {
-  0% {
-    fill: #00ff80;
-  }
-
-  100% {
-    fill: #00ffed;
-  }
-}
-
-.st0 {
-  animation: 4s color-rec infinite alternate linear;
-}
-
-.berlin-illustration {
+#resolute_colour_11 {
   display: none;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
@@ -751,11 +682,11 @@ Medium devices (640px and larger)
   #resolute p,
   #resolute ul,
   #resolute ol {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .footer p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .col-md-4 {
@@ -814,6 +745,10 @@ Medium devices (640px and larger)
     font-size: 0.8em;
   }
 
+  #inktank_colour_11 {
+    display: block;
+  }
+
   #inktank_colour_1,
   #inktank_colour_2,
   #inktank_colour_3,
@@ -823,7 +758,7 @@ Medium devices (640px and larger)
   #inktank_colour_7,
   #inktank_colour_8,
   #inktank_colour_9,
-  #inktank_colour_10
+  #inktank_colour_10,
   #inktank_colour_11,
   #inktank_colour_12 {
     padding-bottom: 50px;
@@ -857,7 +792,7 @@ Medium devices (640px and larger)
     max-width: 220px;
   }
 
-  .intro_title {
+  #inktank .intro_title {
     text-align: unset;
     display: block;
     margin-top: 60px;
@@ -886,7 +821,7 @@ Medium devices (640px and larger)
 
   video {
     display: block;
-    height: 378px;
+    height: 365px;
     width: 100%;
   }
 
@@ -909,21 +844,15 @@ Medium devices (640px and larger)
 
   .affinity_map_1 {
     display: block;
-    width: 80%;
-    margin: 10px auto;
+    width: 95%;
+    margin: 0 auto;
   }
 
-  .affinity_map_2 {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-  }
-
-  .card_sort_1 {
+  .inktank_card_sort {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 70%;
   }
 
   .sitemap {
@@ -933,8 +862,17 @@ Medium devices (640px and larger)
     width: 80%;
   }
 
+  .affinity_map_2 {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .inktank_mockup2 {
-    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
 
   #demo {
@@ -942,8 +880,8 @@ Medium devices (640px and larger)
     width: 627px;
   }
 
-  #inktank_colour_11 {
-    display: block;
+  #inktank .thank_you {
+    font-size: 2.5em;
   }
 
   /* /////////////// RESOLUTE modifications /////////////// */
@@ -960,24 +898,29 @@ Medium devices (640px and larger)
     margin-top: 30px;
   }
 
+  #resolute .intro_title {
+    text-align: unset;
+    display: block;
+    margin-top: 60px;
+  }
+
   .resolute_mockup_1 {
     display: none;
   }
 
   #resolute_colour_1 {
     padding: 0;
-    background-image: linear-gradient(#f5f5f5 23%, #86e6e6 13%);
+    background-image: linear-gradient(#f5f5f5 24.5%, #86e6e6 13%);
     background-size: 100%;
     background-position: center center;
   }
 
   #resolute_colour_1 .container {
-    padding-top: 50px;
-    padding-bottom: 140px;
+    padding-bottom: 10px;
     background-image: url('../img/project_resolute./resolute_mockup_1@1x.png');
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position: 100% 40%;
+    background-position: 100% 30%;
   }
 
   #resolute_colour_2 .row {
@@ -1021,9 +964,94 @@ Medium devices (640px and larger)
     background-position: 100% 90%;
   }
 
+  #resolute_colour_6 {
+    background-image: linear-gradient(#86e6e6 32%, #f5f5f5 20%, #f5f5f5 80%, #86e6e6 10%);
+  }
+
   #resolute_colour_11 {
     display: block;
     /* makes background colour visible */
+  }
+
+  /* Resolute. protoype */
+  #main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #iphone-x {
+    position: relative;
+    margin: 40px auto;
+    width: 375px;
+    height: 812px;
+    border-radius: 40px;
+    background-color: #1f1f1f;
+    box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111, 8px 8px 40px #000;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    // frontal camera/speaker frame
+    &:before {
+      top: 0px;
+      width: 56%;
+      height: 30px;
+      background-color: #1f1f1f;
+      border-radius: 0px 0px 40px 40px;
+    }
+
+    // speaker
+    #speaker {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%, 6px);
+      height: 8px;
+      width: 15%;
+      background-color: #101010;
+      border-radius: 8px;
+      box-shadow: inset 0px -3px 3px 0px rgba(256, 256, 256, 0.2);
+    }
+
+    // camera
+    #camera {
+      position: absolute;
+      left: 10%;
+      top: 0px;
+      z-index: 3;
+      transform: translate(180px, 4px);
+      width: 12px;
+      height: 12px;
+      background-color: #101010;
+      border-radius: 12px;
+      box-shadow: inset 0px -3px 2px 0px rgba(256, 256, 256, 0.2);
+
+      &:after {
+        content: '';
+        position: absolute;
+        background-color: #2d4d76;
+        width: 6px;
+        height: 6px;
+        top: 2px;
+        left: 2px;
+        top: 3px;
+        left: 3px;
+        display: block;
+        border-radius: 4px;
+        box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  #resolute .thank_you {
+    font-size: 2.5em;
   }
 }
 
@@ -1043,6 +1071,25 @@ Large devices (1024px or larger)
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #work p,
+  #contact p,
+  #contact a,
+  #contact_footer p,
+  #about p,
+  #about ul,
+  #inktank p,
+  #inktank ul,
+  #inktank ol,
+  #resolute p,
+  #resolute ul,
+  #resolute ol {
+    font-size: 0.9em;
+  }
+
+  .footer p {
+    font-size: 0.9em;
   }
 
   .logo {
@@ -1125,6 +1172,7 @@ Large devices (1024px or larger)
   #inktank_colour_5,
   #inktank_colour_7,
   #inktank_colour_9,
+  #inktank_colour_11,
   #inktank_colour_12 {
     background-color: #faf3eb;
     padding-bottom: 80px;
@@ -1135,8 +1183,7 @@ Large devices (1024px or larger)
   #inktank_colour_4,
   #inktank_colour_6,
   #inktank_colour_8,
-  #inktank_colour_10,
-  #inktank_colour_11 {
+  #inktank_colour_10 {
     background-color: #fff;
     padding-bottom: 80px;
     width: 100%;
@@ -1146,7 +1193,7 @@ Large devices (1024px or larger)
     padding-left: 0;
   }
 
-  .intro_title {
+#inktank .intro_title {
     margin-left: 0;
   }
 
@@ -1158,7 +1205,7 @@ Large devices (1024px or larger)
   .intro_description_l {
     display: unset;
     display: block;
-    margin-top: 90px;
+    margin-top: 120px;
   }
 
   .intro_description_s {
@@ -1172,13 +1219,14 @@ Large devices (1024px or larger)
   }
 
   #tools {
+    margin-top: 0;
     padding-left: 62px;
   }
 
-  .affinity_map_1 {
+  video {
     display: block;
-    width: 80%;
-    margin: 10px auto;
+    height: 530px;
+    width: 100%;
   }
 
   .quotes_1,
@@ -1195,59 +1243,40 @@ Large devices (1024px or larger)
     width: 80%;
   }
 
-  .card_sort_2 {
+  .inktank_card_sort {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-  }
-
-  .card_sort_1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    width: 100%;
+    padding-top: 30px;
   }
 
   .sitemap {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
   }
 
   #inktank_colour_8 .test_objectives {
-    margin-left: 330px;
-  }
-
-  .affinity_map_2 {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
+    margin-left: 390px;
   }
 
   .inktank_mockup2 {
-    width: 70%;
+    width: 40%;
   }
 
   .prototype_evolution {
     display: block;
-    width: 100%;
-    margin: auto;
-  }
-
-  .style_guide {
-    display: block;
-    width: 80%;
+    width: 95%;
     margin: auto;
   }
 
   #inktank_colour_10 .improvements {
-    margin-left: 330px;
+    margin-left: 390px;
   }
 
   #invision {
-
     border: none;
   }
 
@@ -1262,20 +1291,28 @@ Large devices (1024px or larger)
   }
 
   #resolute .resolute_logo {
-    margin-top: 190px;
+    margin-top: 160px;
     max-width: 330px;
   }
 
+  #resolute .intro_title {
+    margin-top: 0;
+  }
+
+  .resolute_intro_description {
+    padding-top: 30px;
+  }
+
   #resolute_colour_1 {
-    background-image: linear-gradient(#f5f5f5 30.5%, #86e6e6 13%);
+    background-image: linear-gradient(#f5f5f5 27%, #86e6e6 13%);
   }
 
   #resolute_colour_1 .container {
-    padding: 0 0 250px;
+    padding-bottom: 100px;
     background-image: url('../img/project_resolute./resolute_mockup_1@2x.png');
     background-repeat: no-repeat;
     background-size: 55%;
-    background-position: 100% 40%;
+    background-position: 100% 50%;
   }
 
   #resolute_colour_3 .row {
@@ -1305,6 +1342,11 @@ Large devices (1024px or larger)
     background-size: 730px;
     background-position: 100% 100%;
   }
+
+  #resolute_colour_6 {
+    background-image: linear-gradient(#86e6e6 26%, #f5f5f5 20%, #f5f5f5 79%, #86e6e6 10%);
+  }
+
 }
 
 /* ==============================
