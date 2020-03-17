@@ -483,7 +483,21 @@ video {
   display: none;
 }
 
+#inktank .thank_you {
+  font-size: 2em;
+  font-weight: 800;
+  color: #a78678;
+}
 /* /////////////// RESOLUTE modifications /////////////// */
+#resolute a {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+#resolute a:hover {
+color: #f5f5f5;
+text-decoration: underline #f5f5f5;
+}
 #resolute h2 {
   font-family: 'Muli';
   line-height: 1.4;
