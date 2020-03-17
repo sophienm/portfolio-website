@@ -49,10 +49,15 @@
         </div>
         <div class="row">
           <div class="col-md-7 col-lg-7">
-            <h3>MY ROLE</h3>
-            <p>Defining <b>user flows</b>, creating <b>wireframes</b> and the <b>prototype</b>, as well as developing the <b>visual identity</b> of the web application.</p>
-            <h3>TOOLS</h3>
-            <p>Adobe XD, Photoshop, Illustrator</p>
+            <div class="resolute_intro_description">
+              <h3>THE CHALLENGE</h3>
+              <p>Create the UI for the <b>web application</b> — based on the user research provided by <a href="https://careerfoundry.com"><b>CareerFoundry</b></a> — that motivates people into an <b>exercise routine</b> that suits their level,
+                schedule, and interests.</p>
+              <h3>MY ROLE</h3>
+              <p>Defining <b>user flows</b>, creating <b>wireframes</b> and the <b>prototype</b>, as well as developing the <b>visual identity</b> of the web application.</p>
+              <h3>TOOLS</h3>
+              <p>Adobe XD, Photoshop, Illustrator</p>
+            </div>
           </div>
         </div>
       </div>
@@ -60,10 +65,6 @@
     <div id="resolute_colour_2">
       <div class="container">
         <h2>UNDERSTAND</h2>
-        <div class="row">
-          <h3>THE CHALLENGE</h3>
-          <p>Create the UI for the <b>web application</b> — based on the user research provided by CareerFoundry — that motivates people into an <b>exercise routine</b> that suits their level, schedule, and interests.</p>
-        </div>
         <div class="row">
           <h3>CONTEXT</h3>
           <p>Firstly, <b>finding exercise routines for your level can be difficult</b>, especially if you want to try something new. This responsive web app should help people get into an exercise of their choice by holding their hand a bit and
@@ -76,20 +77,20 @@
       </div>
     </div>
     <div id="resolute_colour_3">
-      <div class="container">
-        <h2>RESEARCH</h2>
-        <div class="row">
-          <div class="col-md-5 col-lg-5">
-            <p>As this project was focused on the <b>user interface</b>, the main research was already provided along with <b>user stories</b> and a <b>persona</b> — Rebecca.</p>
-          </div>
-          <div class="col-md-7 col-lg-7">
-            <picture class="resolute_research">
-              <source srcset="img/project_resolute./resolute_research@1x.png" media="(max-width:767px)">
-              <img src="img/project_resolute./resolute_research@2x.png" alt="Research">
-            </picture>
+        <div class="container">
+          <h2>RESEARCH</h2>
+          <div class="row">
+            <div class="col-md-5 col-lg-5">
+              <p>As this project was focused on the <b>user interface</b>, the main research was already provided along with <b>user stories</b> and a <b>persona</b> — Rebecca.</p>
+            </div>
+            <div class="col-md-7 col-lg-7">
+              <picture class="resolute_research">
+                <source srcset="img/project_resolute./resolute_research@1x.png" media="(max-width:767px)">
+                <img src="img/project_resolute./resolute_research@2x.png" alt="Research">
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
     </div>
     <div id="resolute_colour_4">
       <div class="container">
@@ -151,12 +152,13 @@
       <div class="container">
         <h2>STYLE GUIDE</h2>
         <div class="row">
-          <div>
+          <a id="button" aria-describedby="tooltip" class="picture_link" href="files/resolute_style_guide.pdf" target="_blank">
             <picture class="resolute_syle_guide">
-              <source srcset="img/project_resolute./resolute_style_guide_teaser@1x.png" media="(max-width:767px)">
-              <img src="img/project_resolute./resolute_style_guide_teaser@2x.png" alt="Style Guide">
+              <source srcset="img/project_resolute./style_guide@1x.png" media="(max-width:767px)">
+              <img src="img/project_resolute./style_guide@2x.png" alt="Style Guide">
             </picture>
-          </div>
+            <div id="tooltip" role="tooltip">Click for more detail</div>
+          </a>
         </div>
       </div>
     </div>
@@ -213,18 +215,18 @@
       <div class="container">
         <h2>CLICKABLE PROTOTYPE</h2>
         <p>Feel free to click around the <b>Resolute. protoype</b> below and let me know what you think. <b>All feedback is valuable!</b></p>
-        <div id="main" class="row" style="display: flex; flex-direction: row; justify-content: center">
+        <div id="main" style="transform: scale(0.67)">
           <div id="iphone-x">
             <div id="speaker"></div>
             <div id="camera"></div>
-            <iframe width="277" height="600" src="https://xd.adobe.com/embed/0b297885-5aca-494e-7ead-7a7cce3150a4-7d18/?hints=off" frameborder="0" allowfullscreen></iframe>
+            <iframe width="375" height="812" src="https://xd.adobe.com/embed/0b297885-5aca-494e-7ead-7a7cce3150a4-7d18/?hints=off" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
     <div id="resolute_colour_12">
       <div class="container">
-        <p><b>Thank you</b> for taking the time to read my case study!</p>
+        <p><b class="thank_you">Thank you</b> for taking the time to read my case study!</p>
       </div>
     </div>
   </main>
@@ -242,6 +244,34 @@
     </div>
   </footer>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script>
+    const tooltip = document.querySelector("#tooltip");
+
+    function generateGetBoundingClientRect(x = 0, y = 0) {
+      return () => ({
+        width: 0,
+        height: 0,
+        top: y - 30,
+        right: x,
+        bottom: y,
+        left: x
+      });
+    }
+    const virtualElement = {
+      getBoundingClientRect: generateGetBoundingClientRect()
+    };
+    let instance = Popper.createPopper(virtualElement, tooltip);
+    document.addEventListener("mousemove", ({
+      clientX: x,
+      clientY: y
+    }) => {
+      virtualElement.getBoundingClientRect = generateGetBoundingClientRect(
+        x,
+        y
+      );
+      instance.update();
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
