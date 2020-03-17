@@ -375,6 +375,15 @@ footer .icon {
 }
 
 /* /////////////// INKTANK modifications /////////////// */
+#inktank a {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+#inktank a:hover {
+color: #a78678;
+text-decoration: underline #a78678;
+}
 #inktank h2 {
   font-family: 'Muli';
   line-height: 1.4;
