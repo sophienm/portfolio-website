@@ -1238,6 +1238,10 @@ Large devices (1024px or larger)
     width: 100%;
   }
 
+  #inktank_colour_3 .potential_solutions {
+    margin-left: 390px;
+  }
+
   .quotes_1,
   .quotes_2 {
     display: block;
