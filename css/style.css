@@ -146,6 +146,11 @@ a:focus {
   border-bottom: 10px solid #00ffed;
 }
 
+.current {
+  color: #1d1d1b !important;
+  border-bottom: none;
+}
+
 .icon:focus,
 .icon:hover,
 .icon {
