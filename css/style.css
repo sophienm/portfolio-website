@@ -71,7 +71,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: 700;
   padding-top: 15px;
 }
@@ -313,7 +313,7 @@ nav>ul>li>a {
 }
 
 main {
-  padding-top: 59.5px;
+  padding-top: 56px;
 }
 
 footer {
@@ -363,7 +363,7 @@ footer .icon {
   width: 80%;
 }
 
-#skills_tools .row {
+#skills .row {
   margin-top: 0;
 }
 
@@ -381,15 +381,14 @@ footer .icon {
 }
 
 /* /////////////// INKTANK modifications /////////////// */
-
 #inktank a {
   text-decoration: underline;
   border-bottom: none;
 }
 
 #inktank a:hover {
-color: #a78678;
-text-decoration: underline #a78678;
+  color: #a78678;
+  text-decoration: underline #a78678;
 }
 
 #inktank h2 {
@@ -498,15 +497,14 @@ video {
 }
 
 /* /////////////// RESOLUTE modifications /////////////// */
-
 #resolute a {
   text-decoration: underline;
   border-bottom: none;
 }
 
 #resolute a:hover {
-color: #f5f5f5;
-text-decoration: underline #f5f5f5;
+  color: #f5f5f5;
+  text-decoration: underline #f5f5f5;
 }
 
 #resolute h2 {
@@ -663,7 +661,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 80px;
+    padding-top: 77px;
   }
 
   body {
@@ -695,6 +693,10 @@ Medium devices (640px and larger)
 
   .footer p {
     font-size: 0.8em;
+  }
+
+  .col-md-3 {
+    width: 25%;
   }
 
   .col-md-4 {
@@ -730,8 +732,12 @@ Medium devices (640px and larger)
   }
 
   /* /////////////// ABOUT modifications /////////////// */
-  #skills_tools .col-md-6 {
-    padding-left: 60px;
+  #about h3 {
+    font-size: 1em;
+  }
+
+  #skills .center {
+    padding-top: 50px;
   }
 
   /* /////////////// CONTACT modifications /////////////// */
@@ -1115,7 +1121,7 @@ Large devices (1024px or larger)
   }
 
   main {
-    padding-top: 95px;
+    padding-top: 90px;
   }
 
   footer {
@@ -1138,6 +1144,10 @@ Large devices (1024px or larger)
     width: 33.33%;
   }
 
+  .col-lg-3 {
+    width: 25%;
+  }
+
   /* /////////////// INDEX modifications /////////////// */
   #hero {
     padding: 50px 80px;
@@ -1149,25 +1159,23 @@ Large devices (1024px or larger)
   }
 
   .inktank_logo {
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 30px;
     max-width: 180px;
   }
 
   .resolute_logo {
-    margin-top: 70px;
+    margin-top: 80px;
     margin-bottom: 30px;
-    max-width: 210px;
+    max-width: 240px;
   }
+
+
 
   /* /////////////// ABOUT modifications /////////////// */
   .profile_image {
     padding-top: 20px;
     width: 60%;
-  }
-
-  #skills_tools .col-md-6 {
-    padding-left: 180px;
   }
 
   /* /////////////// INKTANK modifications /////////////// */
@@ -1208,7 +1216,7 @@ Large devices (1024px or larger)
     padding-left: 0;
   }
 
-#inktank .intro_title {
+  #inktank .intro_title {
     margin-left: 0;
   }
 
@@ -1365,7 +1373,6 @@ Large devices (1024px or larger)
   #resolute_colour_6 {
     background-image: linear-gradient(#86e6e6 26%, #f5f5f5 20%, #f5f5f5 79%, #86e6e6 10%);
   }
-
 }
 
 /* ==============================
